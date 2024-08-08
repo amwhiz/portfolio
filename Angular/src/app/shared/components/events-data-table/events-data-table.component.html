@@ -1,0 +1,36 @@
+<div class="table-section">
+  <div class="table-container">
+    <div class="table-responsive">
+      <table class="table table-striped">
+        <thead>
+        <tr>
+          <th class="cursor-hand" *ngFor="let head of tableHeadings" (click)="applyFilter(head['apiLabel'])">{{head?.label}}
+            <i class="fa fa-sort" aria-hidden="true" *ngIf="!_.endsWith(sortBy, head['apiLabel'])"></i>
+            <i class="fa fa-sort-asc" aria-hidden="true" *ngIf="_.startsWith(sortBy, head['apiLabel']) && _.endsWith(sortBy, head['apiLabel'])"></i>
+            <i class="fa fa-sort-desc" aria-hidden="true" *ngIf="_.startsWith(sortBy, '-') && _.endsWith(sortBy, head['apiLabel'])"></i>
+          </th>
+          <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let event of events">
+          <td>{{event.name}}</td>
+          <td>{{event.survey_name}}</td>
+          <td>{{event.start_date | date: 'MM/dd/yyyy'}} to {{event.end_date | date: 'MM/dd/yyyy'}}</td>
+          <td *ngIf="event.last_synced != null">{{event.last_synced | date: 'MM/dd/yyyy'}} at {{event.last_synced | date: 'shortTime'}}</td>
+          <td *ngIf="event.last_synced == null">-</td>
+          <td>{{event.total_entries}}</td>
+          <td>
+            <a (click)="editEvent(event)"><img src="assets/img/edit.svg"></a>
+            <a (click)="cloneEvent(event)"><img src="assets/img/clone.svg"></a>
+            <a (click)="deleteEvent(event)"><img src="assets/img/remove.svg"></a>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <app-data-table-pagination [pagination]="pagination" [page]="'events'" [type]="'events'" [limit]="limit"></app-data-table-pagination>
+  </div>
+</div>
+<app-create-event #createEvent [heading]="'Edit Event'" [successBtn]="'Update'">
+</app-create-event>

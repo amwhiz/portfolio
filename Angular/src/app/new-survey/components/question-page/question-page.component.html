@@ -1,0 +1,49 @@
+<div class="row content ml-0">
+  <div class="col-8 bg-white">
+    <div class="row white" *ngIf="!noQuestionsPage; else NoQuestionsPage">
+      <div class="col-6 ">
+        <div class="l-content">
+          <div class="text-center">
+            <cover-image-upload url="https://httpbin.org/status/200" [dimensions]="'512 X 748'" [src]="questionsForPage?.picture" [max]="1" (uploadFinished)="uploadImage($event)">
+            </cover-image-upload>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 right">
+        <span class="pull-right cursor-hand" (click)="removePage.emit()"><i class="fa fa-times close"  aria-hidden="true"></i></span>
+        <h6 class="text-center bold pt-3 text-uppercase">{{questionsForPage?.pageTitle || 'Add Page Title'}}</h6>
+        <hr>
+        <div class="overflow-y" style="height: calc(100vh - 295px)">
+          <ng-container *ngFor="let question of questionsForPage?.questions">
+            <app-question [question]="question" [selectedQuestion]="selectedQuestion" (updateQuestion)="addAnswer.emit($event)" (selectQuestion)="selectedQuestion = $event"></app-question>
+          </ng-container>
+        </div>
+      </div>
+    </div>
+
+    <ng-template #NoQuestionsPage>
+      <div class="row white">
+        <div class="col-12 pl-2 pr-2">
+          <div class="l-content ml-0">
+            <div class="text-center">
+              <cover-image-upload url="https://httpbin.org/status/200" [dimensions]="'1024 X 748'" [src]="coverImage" [max]="1" (uploadFinished)="uploadImage($event)">
+              </cover-image-upload>
+              <div class="row absolute select-language">
+              <span class="col-6">
+              <button class="btn btn-secondary">English</button>
+            </span>
+                <span class="col-6">
+              <button class="btn btn-secondary">Espanol</button>
+            </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </div>
+  <div class="col-4 bg-white">
+    <app-properties [question]="selectedQuestion" (deleteQuestionNo)="deleteQuestion()" (addAnswer)="addAnswer.emit($event)">
+    </app-properties>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+{
+  "JwtSecretKey": "1pFNjEhrlB4+vaO0g160vBy8LQqOe05HwBsp7Ox6EDAH2XyIfcZgb3gGH8hAbgGTEKUJh1llTKQOAjaHbzz92Q==",
+  "ExpiresIn": "1d",
+  "database": {
+    "hostname": "localhost",
+    "username": "root",
+    "password": "root",
+    "database": "example"
+  }
+}

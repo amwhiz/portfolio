@@ -1,0 +1,77 @@
+{
+  "count": 6,
+  "data": [
+    {
+      "syllabusId": "5459d4f738418f5c216a2a5f",
+      "syllabusName": "GL",
+      "description": "General Adult",
+      "descriptorsCount": 0,
+      "tags": [],
+      "status": 1,
+      "created": 1415173325,
+      "createdBy": "37eff33a7f5c46f3b461273553100ab1",
+      "updated": null,
+      "updatedBy": null
+    },
+    {
+      "syllabusId": "5459d52738418f5c216a2a60",
+      "syllabusName": "AL",
+      "description": "Academic",
+      "descriptorsCount": 0,
+      "tags": [],
+      "status": 1,
+      "created": 1415173325,
+      "createdBy": "37eff33a7f5c46f3b461273553100ab1",
+      "updated": null,
+      "updatedBy": null
+    },
+    {
+      "syllabusId": "5459d53338418f5c216a2a61",
+      "syllabusName": "PL",
+      "description": "Professional",
+      "descriptorsCount": 0,
+      "tags": [],
+      "status": 1,
+      "created": 1415173325,
+      "createdBy": "37eff33a7f5c46f3b461273553100ab1",
+      "updated": null,
+      "updatedBy": null
+    },
+    {
+      "syllabusId": "5459d54338418f5c216a2a62",
+      "syllabusName": "YL",
+      "description": "Young Learners",
+      "descriptorsCount": 0,
+      "tags": [],
+      "status": 1,
+      "created": 1415173325,
+      "createdBy": "37eff33a7f5c46f3b461273553100ab1",
+      "updated": null,
+      "updatedBy": null
+    },
+    {
+      "syllabusId": "5459d55b38418f5c216a2a63",
+      "syllabusName": "GLVOC",
+      "description": "Grammar",
+      "descriptorsCount": 0,
+      "tags": [],
+      "status": 1,
+      "created": 1415173325,
+      "createdBy": "37eff33a7f5c46f3b461273553100ab1",
+      "updated": null,
+      "updatedBy": null
+    },
+    {
+      "syllabusId": "5459d56b38418f5c216a2a64",
+      "syllabusName": "GLGRAM",
+      "description": "Vocabulary",
+      "descriptorsCount": 0,
+      "tags": [],
+      "status": 1,
+      "created": 1415173325,
+      "createdBy": "37eff33a7f5c46f3b461273553100ab1",
+      "updated": null,
+      "updatedBy": null
+    }
+  ]
+}

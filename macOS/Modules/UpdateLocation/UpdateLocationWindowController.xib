@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11201"/>
+        <capability name="system font weights other than Regular or Bold" minToolsVersion="7.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="UpdateLocationWindowController" customModule="COPsync911" customModuleProvider="target">
+            <connections>
+                <outlet property="locationTypePopUpButton" destination="hhA-NZ-6Yn" id="Oee-ti-uMn"/>
+                <outlet property="navbarView" destination="Dw8-A6-Rto" id="dCq-yR-LKn"/>
+                <outlet property="organizationLocationPopUpButton" destination="xth-YD-Nw1" id="5uE-aT-Hua"/>
+                <outlet property="organizationNameTextField" destination="Uef-9c-0O4" id="aHG-pq-lQX"/>
+                <outlet property="progressIndicator" destination="zVJ-k2-NJl" id="vJE-ux-14p"/>
+                <outlet property="updateLocationButton" destination="dc4-ne-5sx" id="rVl-l4-1ep"/>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" animationBehavior="default" id="F0z-JX-Cv5">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+            <rect key="contentRect" x="196" y="240" width="1000" height="650"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="777"/>
+            <view key="contentView" wantsLayer="YES" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="1000" height="650"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lBl-YY-K2b">
+                        <rect key="frame" x="324" y="534" width="352" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Enter following information to update your device location." id="mkB-4c-IvP">
+                            <font key="font" metaFont="systemUltraLight" size="13"/>
+                            <color key="textColor" red="0.1058823529" green="0.13725490200000001" blue="0.1647058824" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2PG-3Z-4fC">
+                        <rect key="frame" x="248" y="346" width="500" height="55"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qsp-yJ-u8X">
+                                <rect key="frame" x="-2" y="38" width="126" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Organization Location" id="fPL-Qj-xs3">
+                                    <font key="font" metaFont="systemLight" size="12"/>
+                                    <color key="textColor" red="0.69019607839999997" green="0.69019607839999997" blue="0.69019607839999997" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <popUpButton fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xth-YD-Nw1">
+                                <rect key="frame" x="0.0" y="3" width="500" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <popUpButtonCell key="cell" type="disclosureTriangle" title="select your location" bezelStyle="disclosure" imagePosition="overlaps" alignment="left" lineBreakMode="truncatingTail" state="on" imageScaling="proportionallyDown" inset="2" autoenablesItems="NO" selectedItem="yHf-cx-AWe" id="DbQ-16-6Rj">
+                                    <behavior key="behavior" pushIn="YES" changeBackground="YES" changeGray="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="menu"/>
+                                    <menu key="menu" autoenablesItems="NO" id="em5-ph-QvF">
+                                        <items>
+                                            <menuItem title="select your location" state="on" id="yHf-cx-AWe"/>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                                <connections>
+                                    <outlet property="nextKeyView" destination="hhA-NZ-6Yn" id="aN8-GR-LZw"/>
+                                </connections>
+                            </popUpButton>
+                            <box verticalHuggingPriority="750" fixedFrame="YES" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="hxl-JX-bD5">
+                                <rect key="frame" x="0.0" y="-1" width="500" height="5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </box>
+                        </subviews>
+                    </customView>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dc4-ne-5sx">
+                        <rect key="frame" x="418" y="161" width="165" height="63"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="activate" imagePosition="overlaps" alignment="center" imageScaling="proportionallyDown" inset="2" id="J5A-vC-yoA">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="updateLocationAction:" target="-2" id="s9u-sN-2bn"/>
+                        </connections>
+                    </button>
+                    <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dw8-A6-Rto" customClass="NavbarView" customModule="COPsync911" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="605" width="1000" height="45"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    </customView>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xPK-CO-pUB">
+                        <rect key="frame" x="419" y="569" width="163" height="24"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Update Location" id="y81-Q1-VUB">
+                            <font key="font" metaFont="systemBold" size="20"/>
+                            <color key="textColor" red="0.1058823529" green="0.13725490200000001" blue="0.1647058824" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <progressIndicator wantsLayer="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" maxValue="100" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="zVJ-k2-NJl">
+                        <rect key="frame" x="616" y="185" width="16" height="16"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    </progressIndicator>
+                    <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bZP-oB-GGh">
+                        <rect key="frame" x="248" y="412" width="500" height="55"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oyl-v0-krI">
+                                <rect key="frame" x="-2" y="38" width="126" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Location Name" id="zXA-fj-eJv">
+                                    <font key="font" metaFont="systemLight" size="12"/>
+                                    <color key="textColor" red="0.69019607839999997" green="0.69019607839999997" blue="0.69019607839999997" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <box verticalHuggingPriority="750" fixedFrame="YES" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="L6N-u5-RH7">
+                                <rect key="frame" x="0.0" y="-1" width="500" height="5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </box>
+                            <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uef-9c-0O4">
+                                <rect key="frame" x="5" y="3" width="490" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" placeholderString="enter name" id="rKW-lm-wLQ">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <outlet property="nextKeyView" destination="xth-YD-Nw1" id="8f8-C6-GTq"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                    </customView>
+                    <box verticalHuggingPriority="750" fixedFrame="YES" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="pFx-YL-FcC">
+                        <rect key="frame" x="250" y="523" width="500" height="5"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    </box>
+                    <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U0U-rk-mhq">
+                        <rect key="frame" x="248" y="279" width="500" height="55"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="65m-Q5-gob">
+                                <rect key="frame" x="-2" y="38" width="126" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Location Type" id="t0I-YB-3ZS">
+                                    <font key="font" metaFont="systemLight" size="12"/>
+                                    <color key="textColor" red="0.69019607839999997" green="0.69019607839999997" blue="0.69019607839999997" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <popUpButton fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hhA-NZ-6Yn">
+                                <rect key="frame" x="0.0" y="3" width="500" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <popUpButtonCell key="cell" type="disclosureTriangle" title="select your location type" bezelStyle="disclosure" imagePosition="overlaps" alignment="left" lineBreakMode="truncatingTail" state="on" imageScaling="proportionallyDown" inset="2" autoenablesItems="NO" selectedItem="l4u-kl-zIy" id="ut2-Tc-4tT">
+                                    <behavior key="behavior" pushIn="YES" changeBackground="YES" changeGray="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="menu"/>
+                                    <menu key="menu" autoenablesItems="NO" id="Hkt-ZA-Ppb">
+                                        <items>
+                                            <menuItem title="select your location type" state="on" id="l4u-kl-zIy"/>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                                <connections>
+                                    <outlet property="nextKeyView" destination="Uef-9c-0O4" id="GOC-DQ-eBb"/>
+                                </connections>
+                            </popUpButton>
+                            <box verticalHuggingPriority="750" fixedFrame="YES" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="0qo-VW-Qyd">
+                                <rect key="frame" x="0.0" y="-5" width="500" height="12"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </box>
+                        </subviews>
+                    </customView>
+                </subviews>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+        </window>
+    </objects>
+    <resources>
+        <image name="activate" width="197" height="57"/>
+    </resources>
+</document>

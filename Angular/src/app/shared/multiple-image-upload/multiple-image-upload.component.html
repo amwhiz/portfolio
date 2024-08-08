@@ -1,0 +1,70 @@
+<div
+  fileDrop
+  [accept]="supportedExtensions"
+  (fileOver)="onFileOver($event)"
+  (fileDrop)="onFileChange($event)"
+  [ngClass]="cssClass"
+  [ngClass]="{'img-ul-file-is-over': fileOver}"
+  [ngStyle]="style?.layout"
+>
+
+  <p class="img-ul-file-too-large" *ngIf="showFileTooLargeMessage" [innerText]="fileTooLargeMessage"></p>
+  <div *ngIf="preview" class="img-ul-container img-ul-hr-inline-group" [ngStyle]="style?.previewPanel">
+    <div class="row m-0" *ngFor="let file of uploadedFiles">
+      <div
+        class="img-ul-image col-sm-3 ml-0 mr-0"
+        [ngStyle]="{'background-image': 'url('+ file.src +')'}"
+      >
+        <div *ngIf="file.pending" class="img-ul-loading-overlay">
+          <div class="img-ul-spinning-circle"></div>
+        </div>
+      </div>
+      <div class="col-sm-8">
+        <input class="form-control mt-25" [(ngModel)]="file.name" placeholder="Vehicle name">
+      </div>
+      <div class="col-sm-1">
+        <i class="fa fa-times pull-right cursor-hand f-28 pl-10 mt-32" *ngIf="!file.pending" (click)="deleteFile(file)"></i>
+      </div>
+      <!--<div *ngIf="!file.pending"-->
+           <!--[ngClass]="{'img-ul-disabled': disabled}"-->
+           <!--class="img-ul-x-mark"-->
+           <!--(click)="deleteFile(file)">-->
+        <!--<span class="img-ul-close"></span>-->
+      <!--</div>-->
+    </div>
+  </div>
+  <div class="img-ul-hr-inline-group fr">
+    <label *ngIf="fileCounter != max && _.size(uploadedFiles)"
+           class="img-ul-upload img-ul-button add-image-btn"
+           [ngStyle]="style?.selectButton"
+           [ngClass]="{'img-ul-disabled': disabled}">
+      <i class="fa fa-plus mr-8"></i>
+      ADD MORE IMAGES
+      <input
+        type="file"
+        [disabled]="disabled"
+        [accept]="supportedExtensions"
+        multiple (change)="onFileChange(input.files)"
+        #input>
+    </label>
+    <label *ngIf="fileCounter != max && !_.size(uploadedFiles)"
+           class="img-ul-upload img-ul-button add-image-btn-no-image">
+      <i class="fa fa-camera camera-icon-no-image"></i>
+      <input
+        type="file"
+        [disabled]="disabled"
+        [accept]="supportedExtensions"
+        multiple (change)="onFileChange(input.files)"
+        #input>
+    </label>
+    <button *ngIf="fileCounter > 0"
+            [disabled]="disabled"
+            class="img-ul-clear img-ul-button"
+            (click)="deleteAll()"
+            [ngStyle]="style?.clearButton"
+            [innerText]="clearButtonCaption">
+    </button>
+    <div class="img-ul-drag-box-msg" [innerText]="dropBoxMessage"></div>
+  </div>
+  <div class="clearfix"></div>
+</div>

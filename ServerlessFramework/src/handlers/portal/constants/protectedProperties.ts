@@ -1,0 +1,23 @@
+export const secureProperties = ['otp', 'password'];
+export const omitProperties = [
+  'otp',
+  'password',
+  'previousPlan',
+  'lastPlanUpdatedAt',
+  'vatNumber',
+  'address',
+  'region',
+  'commission',
+  'registrationNumber',
+  'partnerLevel',
+  'marketSector',
+  'isMarketing',
+  'isBilling',
+  'lastInvoiceDate',
+  'lastLoginDate',
+  'lastLogoutDate',
+  'suspendedAt',
+  'createdAt',
+  'updatedAt',
+  'token',
+];

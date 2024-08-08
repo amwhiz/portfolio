@@ -1,0 +1,25 @@
+{
+  "count": 4,
+  "data": [
+    {
+      "descriptorStatusId": "54f37c246623554016cad48d",
+      "descriptorStatus": "requires_revision",
+      "description": "Requires Revision"
+    },
+    {
+      "descriptorStatusId": "54f37c1b6623554016cad48c",
+      "descriptorStatus": "removed",
+      "description": "Removed"
+    },
+    {
+      "descriptorStatusId": "54f37c126623554016cad48b",
+      "descriptorStatus": "being_rated",
+      "description": "Being Rated"
+    },
+    {
+      "descriptorStatusId": "54f37c006623554016cad48a",
+      "descriptorStatus": "published",
+      "description": "Published"
+    }
+  ]
+}

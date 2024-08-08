@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11201"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NavbarView" customModule="COPsync911" customModuleProvider="target">
+            <connections>
+                <outlet property="appTitleTextField" destination="cUY-wu-kpd" id="r9b-8W-797"/>
+                <outlet property="profileCustomView" destination="s22-0k-afI" id="BzX-4Q-5Fa"/>
+                <outlet property="profileNameHeight" destination="FYo-v3-kAR" id="G3E-zs-koo"/>
+                <outlet property="profileNameTextField" destination="ti9-V6-W49" id="zGb-Ec-8gj"/>
+                <outlet property="toolbarView" destination="c22-O7-iKe" id="0Wq-Ez-7D8"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe">
+            <rect key="frame" x="0.0" y="0.0" width="1000" height="45"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="iGg-OZ-gzH">
+                    <rect key="frame" x="0.0" y="0.0" width="1000" height="45"/>
+                    <subviews>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cUY-wu-kpd">
+                            <rect key="frame" x="460" y="14" width="80" height="17"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="COPsync911" id="VzA-fG-nnF">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <customView translatesAutoresizingMaskIntoConstraints="NO" id="s22-0k-afI" customClass="ProfileNSView" customModule="COPsync911" customModuleProvider="target">
+                            <rect key="frame" x="790" y="0.0" width="210" height="45"/>
+                            <subviews>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ti9-V6-W49">
+                                    <rect key="frame" x="4" y="3" width="202" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="FYo-v3-kAR"/>
+                                        <constraint firstAttribute="width" constant="198" id="Zhc-pC-4lX"/>
+                                    </constraints>
+                                    <textFieldCell key="cell" lineBreakMode="charWrapping" sendsActionOnEndEditing="YES" alignment="center" title="Erik Smith" id="EUF-26-kE0">
+                                        <font key="font" metaFont="system"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="G1Z-fL-R3G"/>
+                                <constraint firstAttribute="width" constant="210" id="Ldw-7U-dsD"/>
+                                <constraint firstItem="ti9-V6-W49" firstAttribute="centerX" secondItem="s22-0k-afI" secondAttribute="centerX" id="PCg-8S-agR"/>
+                                <constraint firstItem="ti9-V6-W49" firstAttribute="centerY" secondItem="s22-0k-afI" secondAttribute="centerY" id="VOI-e1-Uk9"/>
+                            </constraints>
+                        </customView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="s22-0k-afI" secondAttribute="bottom" id="TmJ-Cf-jAH"/>
+                        <constraint firstItem="cUY-wu-kpd" firstAttribute="centerY" secondItem="iGg-OZ-gzH" secondAttribute="centerY" id="b9y-uK-woa"/>
+                        <constraint firstItem="cUY-wu-kpd" firstAttribute="centerX" secondItem="iGg-OZ-gzH" secondAttribute="centerX" id="fpw-IG-Kbt"/>
+                        <constraint firstAttribute="trailing" secondItem="s22-0k-afI" secondAttribute="trailing" id="iZ4-k5-n5e"/>
+                        <constraint firstItem="s22-0k-afI" firstAttribute="top" secondItem="iGg-OZ-gzH" secondAttribute="top" id="io0-vW-IhG"/>
+                        <constraint firstAttribute="height" constant="45" id="xyS-Uk-Vai"/>
+                    </constraints>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="iGg-OZ-gzH" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="27O-qp-3nj"/>
+                <constraint firstAttribute="trailing" secondItem="iGg-OZ-gzH" secondAttribute="trailing" id="CKu-ec-eir"/>
+                <constraint firstAttribute="bottom" secondItem="iGg-OZ-gzH" secondAttribute="bottom" id="ehS-6b-HDD"/>
+                <constraint firstItem="iGg-OZ-gzH" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="hcj-t6-H3B"/>
+            </constraints>
+            <point key="canvasLocation" x="140" y="166.5"/>
+        </customView>
+    </objects>
+</document>

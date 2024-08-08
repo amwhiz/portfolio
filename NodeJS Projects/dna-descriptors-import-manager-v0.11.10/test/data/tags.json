@@ -1,0 +1,464 @@
+{
+  "tags": [
+    {
+      "tagTypeId": "5459cc0b81c2042c17fd041e",
+      "tagTypeName": "GSE Band",
+      "tags": [
+        {
+          "tagId": "5459cd6681c2042c17fd0430",
+          "tagName": "10 - 21"
+        },
+        {
+          "tagId": "5459cd7581c2042c17fd0431",
+          "tagName": "22 - 29"
+        },
+        {
+          "tagId": "5459cd7e81c2042c17fd0432",
+          "tagName": "30 - 35"
+        },
+        {
+          "tagId": "5459cd8881c2042c17fd0433",
+          "tagName": "36 - 42"
+        },
+        {
+          "tagId": "5459cd9281c2042c17fd0434",
+          "tagName": "43 - 50"
+        },
+        {
+          "tagId": "5459cd9b81c2042c17fd0435",
+          "tagName": "51 - 58"
+        },
+        {
+          "tagId": "5459cda481c2042c17fd0436",
+          "tagName": "59 - 66"
+        },
+        {
+          "tagId": "5459cdae81c2042c17fd0437",
+          "tagName": "67 - 75"
+        },
+        {
+          "tagId": "5459cdb781c2042c17fd0438",
+          "tagName": "76 - 84"
+        },
+        {
+          "tagId": "5459cdbf81c2042c17fd0439",
+          "tagName": "85 - 90"
+        }
+      ]
+    },
+    {
+      "tagTypeId": "5459cc1981c2042c17fd0420",
+      "tagTypeName": "CEFR",
+      "tags": [
+        {
+          "tagId": "5459ccfe81c2042c17fd0426",
+          "tagName": "<A1 (10-21)"
+        },
+        {
+          "tagId": "5459cd0981c2042c17fd0427",
+          "tagName": "A1 (22-29)"
+        },
+        {
+          "tagId": "5459cd0c81c2042c17fd0428",
+          "tagName": "A2 (30-35)"
+        },
+        {
+          "tagId": "5459cd1981c2042c17fd0429",
+          "tagName": "A2+ (36-42)"
+        },
+        {
+          "tagId": "5459cd2181c2042c17fd042a",
+          "tagName": "B1 (43-50)"
+        },
+        {
+          "tagId": "5459cd2881c2042c17fd042b",
+          "tagName": "B1+ (51-58)"
+        },
+        {
+          "tagId": "5459cd3281c2042c17fd042c",
+          "tagName": "B2 (59-66)"
+        },
+        {
+          "tagId": "5459cd3581c2042c17fd042d",
+          "tagName": "B2+ (67-75)"
+        },
+        {
+          "tagId": "5459cd3c81c2042c17fd042e",
+          "tagName": "C1 (76-84)"
+        },
+        {
+          "tagId": "5459cd3f81c2042c17fd042f",
+          "tagName": "C2 (85-90)"
+        }
+      ]
+    },
+    {
+      "tagTypeId": "5459cc0481c2042c17fd041d",
+      "tagTypeName": "GSE Value",
+      "tags": [
+        {
+          "tagId": "5459cffe81c2042c17fd043a",
+          "tagName": "10"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd043c",
+          "tagName": "11"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd043d",
+          "tagName": "12"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd043e",
+          "tagName": "13"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd043f",
+          "tagName": "14"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd0440",
+          "tagName": "15"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd0441",
+          "tagName": "16"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd0442",
+          "tagName": "17"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd0443",
+          "tagName": "18"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd0444",
+          "tagName": "19"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd0445",
+          "tagName": "20"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd0446",
+          "tagName": "21"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd0447",
+          "tagName": "22"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd0448",
+          "tagName": "23"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd0449",
+          "tagName": "24"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd044a",
+          "tagName": "25"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd044b",
+          "tagName": "26"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd044c",
+          "tagName": "27"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd044d",
+          "tagName": "28"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd044e",
+          "tagName": "29"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd044f",
+          "tagName": "30"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd0450",
+          "tagName": "31"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd0451",
+          "tagName": "32"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd0452",
+          "tagName": "33"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd0453",
+          "tagName": "34"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd0454",
+          "tagName": "35"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd0455",
+          "tagName": "36"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd0456",
+          "tagName": "37"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd0457",
+          "tagName": "38"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd0458",
+          "tagName": "39"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd0459",
+          "tagName": "40"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd045a",
+          "tagName": "41"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd045b",
+          "tagName": "42"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd045c",
+          "tagName": "43"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd045d",
+          "tagName": "44"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd045e",
+          "tagName": "45"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd045f",
+          "tagName": "46"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd0460",
+          "tagName": "47"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd0461",
+          "tagName": "48"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd0462",
+          "tagName": "49"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd0463",
+          "tagName": "50"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd0464",
+          "tagName": "51"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd0465",
+          "tagName": "52"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd0466",
+          "tagName": "53"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd0467",
+          "tagName": "54"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd0468",
+          "tagName": "55"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd0469",
+          "tagName": "56"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd046a",
+          "tagName": "57"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd046b",
+          "tagName": "58"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd046c",
+          "tagName": "59"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd046d",
+          "tagName": "60"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd046e",
+          "tagName": "61"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd046f",
+          "tagName": "62"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd0470",
+          "tagName": "63"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd0471",
+          "tagName": "64"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd0472",
+          "tagName": "65"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd0473",
+          "tagName": "66"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd0474",
+          "tagName": "67"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd0475",
+          "tagName": "68"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd0476",
+          "tagName": "69"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd0477",
+          "tagName": "70"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd0478",
+          "tagName": "71"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd0479",
+          "tagName": "72"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd047a",
+          "tagName": "73"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd047b",
+          "tagName": "74"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd047c",
+          "tagName": "75"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd047d",
+          "tagName": "76"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd047e",
+          "tagName": "77"
+        },
+        {
+          "tagId": "5459d0d281c2042c17fd047f",
+          "tagName": "78"
+        },
+        {
+          "tagId": "5459d0d381c2042c17fd0480",
+          "tagName": "79"
+        },
+        {
+          "tagId": "5459d0d381c2042c17fd0481",
+          "tagName": "80"
+        },
+        {
+          "tagId": "5459d0d381c2042c17fd0482",
+          "tagName": "81"
+        },
+        {
+          "tagId": "5459d0d381c2042c17fd0483",
+          "tagName": "82"
+        },
+        {
+          "tagId": "5459d0d381c2042c17fd0484",
+          "tagName": "83"
+        },
+        {
+          "tagId": "5459d0d381c2042c17fd0485",
+          "tagName": "84"
+        },
+        {
+          "tagId": "5459d0d381c2042c17fd0486",
+          "tagName": "85"
+        },
+        {
+          "tagId": "5459d0d381c2042c17fd0487",
+          "tagName": "86"
+        },
+        {
+          "tagId": "5459d0d381c2042c17fd0488",
+          "tagName": "87"
+        },
+        {
+          "tagId": "5459d0d381c2042c17fd0489",
+          "tagName": "88"
+        },
+        {
+          "tagId": "5459d0d381c2042c17fd048a",
+          "tagName": "89"
+        },
+        {
+          "tagId": "5459d0d381c2042c17fd048b",
+          "tagName": "90"
+        }
+      ]
+    },
+    {
+      "tagTypeId": "5459cc1081c2042c17fd041f",
+      "tagTypeName": "Skill",
+      "tags": [
+        {
+          "tagId": "5459cc9681c2042c17fd0421",
+          "tagName": "Reading"
+        },
+        {
+          "tagId": "5459cc9e81c2042c17fd0422",
+          "tagName": "Writing"
+        },
+        {
+          "tagId": "5459cca481c2042c17fd0423",
+          "tagName": "Listening"
+        },
+        {
+          "tagId": "5459ccc281c2042c17fd0424",
+          "tagName": "Spoken Production"
+        },
+        {
+          "tagId": "5459cccc81c2042c17fd0425",
+          "tagName": "Spoken Interaction"
+        },
+        {
+          "tagId": "5476d2bd5c623ec2b19358e0",
+          "tagName": "Speaking"
+        },
+        {
+          "tagId": "5476d2db5c623ec2b19358e1",
+          "tagName": "Grammar"
+        },
+        {
+          "tagId": "5476d2f05c623ec2b19358e2",
+          "tagName": "Vocabulary"
+        }
+      ]
+    }
+  ]
+}

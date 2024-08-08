@@ -1,0 +1,15 @@
+[qa]
+mdb_address = localhost
+mdb_port = 27017
+mdb_db = testdb
+mdb_username = testuser
+mdb_pw = testpass
+fakeusers = "fakeusers.txt"
+
+[prod]
+mdb_address = localhost
+mdb_port = 27017
+mdb_db = testdb
+mdb_username = testuser
+mdb_pw = testpass
+fakeusers = "fakeusers.txt"

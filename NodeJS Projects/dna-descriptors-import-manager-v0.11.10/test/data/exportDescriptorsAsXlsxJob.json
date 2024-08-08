@@ -1,0 +1,35 @@
+{
+  "attempts": null,
+  "name": "export",
+  "params": {
+    "query": {
+      "search-v2": "true",
+      "q": "This is some text",
+      "limit": "10",
+      "offset": "0",
+      "filters": "{\"tags\":{\"tags\":[\"5459cc9681c2042c17fd0421\"]},\"syllabuses\":[\"54fe84eb070b48b42932d4c5\"],\"status\":[\"published\",\"being_rated\"],\"gseRange\":{\"from\":\"18\",\"to\":\"82\"}}",
+      "sortBy": "{\"property\":\"gse\",\"order\":\"asc\"}"
+    },
+    "uploader": {
+      "provider": "external",
+      "displayName": "John Doe",
+      "userStatus": "ACTIVE",
+      "emailAddress": [
+        "example@gmail.com"
+      ],
+      "language": null,
+      "timeZone": null,
+      "roles": [
+        "owner"
+      ],
+      "accessToken": "bla_bla_bla",
+      "refreshToken": "bla_bla_bla",
+      "userId": "547711636cea7ebb1c18f152",
+      "logged_in": true
+    }
+  },
+  "priority": 0,
+  "queue": "descriptors_export_to_xlsx",
+  "status": "enqueued",
+  "timeout": null
+}

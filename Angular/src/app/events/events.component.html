@@ -1,0 +1,26 @@
+<app-page-header></app-page-header>
+<div class="container-fluid">
+  <div class="row">
+    <app-side-nav [currentPage]="'events'"></app-side-nav>
+    <main role="main" class="col-sm-9 ml-sm-auto col-md-10 pl-0 pr-0 page-header">
+      <div class="row page-title pt-3 pl-3 pb-3">
+        <div class="col-sm-3 pl-0">
+          <h4 class="title-color">Events</h4>
+          <!-- <span class="sub-title-color">Home</span> -->
+        </div>
+        <div class="col-sm-9 pr-4">
+          <a class="filters-text float-right" id=""> <i class="fa fa-filter"></i>
+              <span>Filter</span>
+          </a>
+          <button class="btn btn-success float-right" (click)="createEvent.show('create')">New Event</button>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <app-events-data-table [events]="data?.events" [sortBy]="newQuery?.SortBy" [pagination]="data?.pagination" [limit]="newQuery?.Limit" (changeQueryParams)="onRouteChange($event)" (createdEvent)="onRouteChange($event)" (editEventAction)="editEventAction($event, createEvent)" (cloneEventAction)="cloneEventAction($event, createEvent)" (deleteEventAction)="deleteEventAction($event)"></app-events-data-table>
+    </main>
+  </div>
+</div>
+
+<app-create-event #createEvent [heading]="'New Event'" [surveys]="dataSurvey?.surveys" [successBtn]="'Done'" (createdEvent)="getEvents(newQuery)">
+</app-create-event>
+

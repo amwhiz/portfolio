@@ -1,0 +1,19 @@
+<app-page-header></app-page-header>
+<div class="container-fluid">
+  <div class="row">
+    <app-side-nav [currentPage]="'surveys'"></app-side-nav>
+    <main role="main" class="col-sm-9 ml-sm-auto col-md-10 pl-0 pr-0 page-header">
+      <div class="row page-title pt-3 pl-3 pb-3">
+        <div class="col-sm-3 pl-0">
+          <h4 class="title-color">Surveys</h4>
+          <!-- <span class="sub-title-color">Home</span> -->
+        </div>
+        <div class="col-sm-9 pr-4">
+          <button class="btn btn-success float-right" (click)="navigateToCreateNewSurvey()">New Survey</button>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <app-surveys-data-table [surveys]="data?.surveys" [sortBy]="newQuery?.SortBy" [pagination]="data?.pagination" [limit]="newQuery?.Limit" (changeQueryParams)="onRouteChange($event)" (deleteSurveyAction)="deleteSurveyAction($event)"></app-surveys-data-table>
+    </main>
+  </div>
+</div>

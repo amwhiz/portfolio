@@ -1,0 +1,50 @@
+<div class="mb-2 question" [ngClass]="{'highlight': selectedQuestion.no === question.no}"  [ngSwitch]="question.type">
+
+  <!--YesOrNo-->
+  <div class="cursor-hand question" *ngSwitchCase="'YES_NO'" (click)="questionSelection()">
+    <div class="pull-left l-h-2 p-l2">
+      {{question.name || 'Please Fill'}}
+    </div>
+    <div class="text-right">
+      <div class="btn-group" data-toggle="buttons">
+        <label class="btn btn-primary btn-sm active m-0">
+          <input type="radio" name="options" id="option1" autocomplete="off" checked> Yes
+        </label>
+        <label class="btn btn-secondary btn-sm m-0">
+          <input type="radio" name="options" id="option2" autocomplete="off"> No
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <!--Acknowledgement-->
+  <div class="cursor-hand question"  *ngSwitchCase="'ACKNOWLEDGEMENT'"  (click)="questionSelection()">
+    <div class="mb-2">{{question.acknowledgement || 'Please Fill'}}</div>
+    <div class="mb-2">{{question.name || 'Please Fill'}}</div>
+    <div class="text-right">
+      <div class="btn-group" data-toggle="buttons">
+        <label class="btn btn-primary btn-sm active m-0">
+          <input type="radio" name="options" id="accept" autocomplete="off" checked> Yes
+        </label>
+        <label class="btn btn-secondary btn-sm m-0">
+          <input type="radio" name="options" id="not_accept" autocomplete="off"> No
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <div class="cursor-hand question"  *ngSwitchCase="'CONTENT'"  (click)="questionSelection()">
+    <div class="pb-2 yellow-container">{{question.acknowledgement || 'Please Fill'}}</div>
+  </div>
+
+  <div class="cursor-hand question"  *ngSwitchCase="'IMAGE'"  (click)="questionSelection()">
+    <cover-image-upload url="https://httpbin.org/status/200" [src]="_.first(question.options)" [smallImage]="true" [max]="1" (uploadFinished)="onUpload($event)">
+    </cover-image-upload>
+  </div>
+
+  <!--By Default-->
+  <div class="input-group cursor-hand" *ngSwitchDefault (click)="questionSelection()">
+    <div type="text" class="form-control question">{{question.name || 'Please Fill'}}</div>
+    <span class="input-group-addon" id="sizing-addon2"><i class="fa fa-check fa-2x" style="color: white" aria-hidden="true"></i></span>
+  </div>
+</div>

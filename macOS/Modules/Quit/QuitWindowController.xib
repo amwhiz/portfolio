@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11201"/>
+        <capability name="system font weights other than Regular or Bold" minToolsVersion="7.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="QuitWindowController" customModule="COPsync911" customModuleProvider="target">
+            <connections>
+                <outlet property="forgotPasswordTextField" destination="YEA-VT-2Vk" id="cHm-Yb-Vcz"/>
+                <outlet property="okButton" destination="1z1-Gi-Pcq" id="wzF-fP-Zbl"/>
+                <outlet property="passwordTextField" destination="yna-VG-dWm" id="IhZ-XF-UOG"/>
+                <outlet property="usernameTextField" destination="SBf-Ie-jNx" id="Vet-Qz-EXp"/>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="COPsync911" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" animationBehavior="default" id="F0z-JX-Cv5">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+            <rect key="contentRect" x="196" y="240" width="680" height="425"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="777"/>
+            <view key="contentView" wantsLayer="YES" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="680" height="425"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RyJ-tl-SdK">
+                        <rect key="frame" x="0.0" y="0.0" width="680" height="425"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="loginscreen" id="0A2-2D-aA9"/>
+                    </imageView>
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FAf-4v-T1P">
+                        <rect key="frame" x="305" y="345" width="70" height="70"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="logo2" id="8qV-8r-e6b"/>
+                    </imageView>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fk4-Ch-hKw">
+                        <rect key="frame" x="240" y="307" width="200" height="24"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Close COPsync911?" id="chf-La-yDv">
+                            <font key="font" metaFont="systemBold" size="20"/>
+                            <color key="textColor" red="0.1058823529" green="0.13725490200000001" blue="0.1647058824" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nXM-ed-NNm">
+                        <rect key="frame" x="164" y="284" width="352" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="To close COPsync911, please use your Dataonix Account." id="LFO-hj-5qg">
+                            <font key="font" metaFont="systemUltraLight" size="13"/>
+                            <color key="textColor" red="0.1058823529" green="0.13725490200000001" blue="0.1647058824" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <box verticalHuggingPriority="750" fixedFrame="YES" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="G0N-xL-49V">
+                        <rect key="frame" x="90" y="273" width="500" height="5"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    </box>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ah8-AN-kdG">
+                        <rect key="frame" x="194" y="221" width="73" height="19"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Username" id="3zM-oh-ryc">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" red="0.38431372549999998" green="0.43529411759999997" blue="0.46666666670000001" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SBf-Ie-jNx">
+                        <rect key="frame" x="281" y="217" width="201" height="24"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" focusRingType="none" alignment="left" id="oS4-pY-9EN">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            <allowedInputSourceLocales>
+                                <string>NSAllRomanInputSourcesLocaleIdentifier</string>
+                            </allowedInputSourceLocales>
+                        </textFieldCell>
+                    </textField>
+                    <box verticalHuggingPriority="750" fixedFrame="YES" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="VCy-HK-41S">
+                        <rect key="frame" x="283" y="212" width="200" height="5"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    </box>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OH2-58-Avx">
+                        <rect key="frame" x="194" y="164" width="73" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Password" id="Pgp-SS-ZLZ">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" red="0.38431372549999998" green="0.43529411759999997" blue="0.46666666670000001" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <secureTextField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yna-VG-dWm">
+                        <rect key="frame" x="281" y="159" width="201" height="24"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <secureTextFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" focusRingType="none" alignment="left" usesSingleLineMode="YES" id="1ME-El-BwF">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            <allowedInputSourceLocales>
+                                <string>NSAllRomanInputSourcesLocaleIdentifier</string>
+                            </allowedInputSourceLocales>
+                        </secureTextFieldCell>
+                        <connections>
+                            <action selector="textFieldAction:" target="-2" id="5nm-8z-41N"/>
+                        </connections>
+                    </secureTextField>
+                    <box verticalHuggingPriority="750" fixedFrame="YES" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="Y3o-eM-5Nt">
+                        <rect key="frame" x="283" y="154" width="200" height="5"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    </box>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1z1-Gi-Pcq">
+                        <rect key="frame" x="199" y="78" width="130" height="47"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="ok" imagePosition="only" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="cYW-lv-R9J">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="okAction:" target="-2" id="THa-Jm-hMf"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DUZ-Q2-2CS">
+                        <rect key="frame" x="355" y="78" width="126" height="47"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="cancel" imagePosition="only" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="HAo-my-Lwv">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="cancelAction:" target="-2" id="U0v-0X-Gdv"/>
+                        </connections>
+                    </button>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YEA-VT-2Vk" customClass="ForgotPasswordCustomTextField" customModule="COPsync911" customModuleProvider="target">
+                        <rect key="frame" x="253" y="33" width="174" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="Ugk-EQ-YZo">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="160.5"/>
+        </window>
+    </objects>
+    <resources>
+        <image name="cancel" width="217" height="71"/>
+        <image name="loginscreen" width="1161" height="751"/>
+        <image name="logo2" width="247" height="363"/>
+        <image name="ok" width="217" height="71"/>
+    </resources>
+</document>

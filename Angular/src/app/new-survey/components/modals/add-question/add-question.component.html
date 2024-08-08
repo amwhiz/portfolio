@@ -1,0 +1,23 @@
+<app-modal #addQuestion [heading]="'Question Type'" [successBtn]="'Next'" [successBtnDisabled]="!selectedQuestionType" (onClose)="closeModal(addQuestion)" (onSuccess)="addQuestion.hide(); selectedQuestionType === 'IMAGE' ? addQuestionToQuestions('') : (!_.includes(['ACKNOWLEDGEMENT', 'CONTENT'], selectedQuestionType) ? newQuestion.show() : newQuestionAck.show())">
+  <p class="text-center">Please choose a question type</p>
+  <div class="container cursor-hand form-control pt-2 pb-2 mt-2" [ngClass]="{'shadow-highlight': selectedQuestionType === questionType}" *ngFor="let questionType of _.keys(questionTypes)" (click)="selectedQuestionType = questionType">
+    <span style="line-height: 1.7">{{questionTypes[questionType]}}</span>
+    <span class="pull-right">
+      <i class="fa fa-check"></i>
+    </span>
+  </div>
+</app-modal>
+
+<app-modal #newQuestion [heading]="'New Question'" [successBtnDisabled]="!_.size(questionName.value)" [successBtn]="'Next'" (onClose)="closeModal(newQuestion, questionName)" (onSuccess)="addQuestionToQuestions(questionName.value); selectedQuestionType = ''; questionName.value =''; newQuestion.hide()">
+  <p class="text-center">What is your question?</p>
+  <input #questionName [(ngModel)]="questionName.value" type="text" class="form-control" placeholder="Enter question here"/>
+</app-modal>
+
+<app-modal #newQuestionAck [heading]="'New Question'" [successBtnDisabled]="!questionNameAck.value || (selectedQuestionType === 'ACKNOWLEDGEMENT' ? !questionNameLabel : false)" [successBtn]="'Next'" (onClose)="closeModal(newQuestionAck, questionNameAck)" (onSuccess)="addQuestionToQuestions(questionNameLabel, questionNameAck.value); selectedQuestionType = ''; questionNameAck.value = ''; questionNameLabel = ''; newQuestionAck.hide()">
+  <label>Message:</label>
+  <textarea #questionNameAck [(ngModel)]="questionNameAck.value"  style="height: 200px" type="text" class="form-control" placeholder="Enter your message" ></textarea>
+  <ng-container *ngIf="selectedQuestionType === 'ACKNOWLEDGEMENT'">
+    <label class="mt-3">Question:</label>
+    <input [(ngModel)]="questionNameLabel" type="text" class="form-control" placeholder="Enter question here"/>
+  </ng-container>
+</app-modal>

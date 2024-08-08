@@ -1,0 +1,13 @@
+.DS_Store
+.nodemonignore
+.sass-cache/
+npm-debug.log
+node_modules/
+coverage/
+.bower-*/
+.idea/
+coverage/
+jscs.report
+ci*
+Dockerfile
+cpd_report

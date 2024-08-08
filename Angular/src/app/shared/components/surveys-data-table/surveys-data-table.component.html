@@ -1,0 +1,37 @@
+<div class="table-section">
+  <div class="table-container">
+    <div class="table-responsive">
+      <table class="table table-striped">
+        <thead>
+        <tr>
+          <th class="cursor-hand" *ngFor="let head of tableHeadings" (click)="applyFilter(head['apiLabel'])">{{head?.label}}
+            <i class="fa fa-sort" aria-hidden="true" *ngIf="!_.endsWith(sortBy, head['apiLabel'])"></i>
+            <i class="fa fa-sort-asc" aria-hidden="true" *ngIf="_.startsWith(sortBy, head['apiLabel']) && _.endsWith(sortBy, head['apiLabel'])"></i>
+            <i class="fa fa-sort-desc" aria-hidden="true" *ngIf="_.startsWith(sortBy, '-') && _.endsWith(sortBy, head['apiLabel'])"></i>
+          </th>
+          <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let survey of surveys">
+          <td>{{survey.name}}</td>
+          <td>{{survey.client_name}}</td>
+          <td>{{survey.events}}</td>
+          <td>{{survey.total_entries}}</td>
+          <td *ngIf="survey.events">
+            <a href="javascript:void(0);" class="disabled-icon"><img src="assets/img/edit.svg"></a>
+            <a (click)="onClone(survey?.id)"><img src="assets/img/clone.svg"></a>
+            <a href="javascript:void(0);" class="disabled-icon"><img src="assets/img/remove.svg"></a>
+          </td>
+          <td *ngIf="!survey.events">
+            <a [routerLink]="'/survey' +'/'+ survey?.id"><img src="assets/img/edit.svg"></a>
+            <a (click)="onClone(survey?.id)"><img src="assets/img/clone.svg"></a>
+            <a (click)="deleteSurvey(survey)"><img src="assets/img/remove.svg"></a>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <app-data-table-pagination [pagination]="pagination" [page]="'surveys'" [type]="'surveys'" [limit]="limit"></app-data-table-pagination>
+  </div>
+</div>

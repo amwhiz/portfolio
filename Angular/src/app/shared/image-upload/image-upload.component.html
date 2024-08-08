@@ -1,0 +1,32 @@
+<div
+     fileDrop
+     [accept]="supportedExtensions"
+     (fileOver)="onFileOver($event)"
+     (fileDrop)="onFileChange($event)"
+     [ngClass]="cssClass"
+     [ngClass]="{'img-ul-file-is-over': fileOver}"
+     [ngStyle]="style?.layout"
+>
+  <div class="img-ul-file-upload img-ul-hr-inline-group" [ngStyle]="{'height': smallImage ? '200px' : 'calc(100vh - 245px)', 'padding': '0px'}" (click)="input.click()">
+    <i class="fa fa-camera t-45" aria-hidden="true" *ngIf="!src"></i>
+    <span *ngIf="!src" class="image-dimensions">{{dimensions}}</span>
+    <div *ngIf="src">
+      <div
+        [ngStyle]="{'background-image': 'url('+ src +')', 'height': smallImage ? '200px' : '450px', 'background-size': 'cover'}"
+      >
+      </div>
+    </div>
+    <app-page-spinner [visible]="loading"></app-page-spinner>
+    <input
+      type="file"
+      [accept]="supportedExtensions"
+      multiple (change)="onFileChange(input.files)"
+      #input />
+
+    <label *ngIf="fileCounter > 0" class="img-ul-clear img-ul-button" (click)="deleteAll()" [ngStyle]="style?.clearButton">
+      <span [innerText]="clearButtonCaption"></span>
+    </label>
+  </div>
+
+  <p class="img-ul-file-too-large" *ngIf="showFileTooLargeMessage" [innerText]="fileTooLargeMessage"></p>
+</div>

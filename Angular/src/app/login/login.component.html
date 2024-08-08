@@ -1,0 +1,40 @@
+<div class="login-container">
+  <div class="login-details">
+    <div class="inner-heading">
+      <div class="inner-content">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h2 class="text-center no-mar">NEWSCOPE</h2>
+          </div>
+          <div class="panel-body">
+            <div class="height-25">
+              <p class="text-danger text-center">{{errorMsg}}</p>
+            </div>
+            <form name="form" (ngSubmit)="f.form.valid && login()" #f="ngForm" novalidate>
+              <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !username.valid }">
+                <i class="fa fa-user login-icon"></i>
+                <input type="text" class="form-control" placeholder="Username" name="username" [(ngModel)]="model.username" #username="ngModel" required autocomplete="off">
+                <div class="height-10 p-r">
+                  <p class="text-danger p-a" *ngIf="f.submitted && !username.valid">Username is required</p>
+                </div>
+              </div>
+              <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !password.valid }">
+                <i class="fa fa-lock login-icon"></i>
+                <input type="password" class="form-control" placeholder="Password" name="password" [(ngModel)]="model.password" #password="ngModel" required autocomplete="off">
+                <div class="height-10 p-r">
+                  <p class="text-danger p-a" *ngIf="f.submitted && !password.valid">Password is required</p>
+                </div>
+              </div>
+              <div class="form-group clearfix">
+                <button class="btn btn-success" [disabled]="loading">LOGIN</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="forgot-password">
+    <i class="fa fa-lock"></i> <a href="javascript:void(0);">Forgot Password</a>
+  </div>
+</div>

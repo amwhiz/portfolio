@@ -1,0 +1,8 @@
+<app-modal #displayImages [heading]="'Select Images'" [successBtn]="'Done'" (onClose)="onCancel()" (onSuccess)="done()" [successBtnDisabled]="isFormInvalid()">
+  <multiple-image-upload
+    #MultipleImage
+    [uploadedFiles]="newQuestion?.options"
+    (uploadFinished)="uploadImages($event)"
+    (removed)="removeImage($event)">
+  </multiple-image-upload>
+</app-modal>

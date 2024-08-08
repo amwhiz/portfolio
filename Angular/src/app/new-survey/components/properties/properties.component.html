@@ -1,0 +1,66 @@
+<div>
+  <h6 class="text-center bold pt-3">QUESTION PROPERTIES</h6>
+  <hr class="mt-3"/>
+  <div class="overflow-y question-lists">
+    <ng-container *ngIf="question.type && question.type !== 'IMAGE'">
+      <div class="form-group" *ngIf="question.type !== 'CONTENT'">
+        <div type="text" class="que inline" aria-describedby="sizing-addon1">
+          <label for="questionName">Question:</label>
+          <input class="form-control" type="text" id="questionName" name="questionName" [(ngModel)]="question.name" (ngModelChange)="validateQuestion($event)"/>
+        </div>
+      </div>
+
+      <div class="input pb-0 mb-3" *ngIf="_.includes(['ACKNOWLEDGEMENT', 'CONTENT'], question.type)">
+        <div type="text" class="que inline" aria-describedby="sizing-addon1">
+          <label class="mb-0 pl-1" for="acknowledgement">Message:</label>
+          <textarea id="acknowledgement" name="questionName" style="height: 180px; width: 100%" [(ngModel)]="question.acknowledgement"></textarea>
+        </div>
+      </div>
+
+      <!--No of Multiple Images Field-->
+      <div class="form-group" *ngIf="question.type === 'MULTIPLE_IMAGE'">
+        <div type="text" class="que inline" aria-describedby="sizing-addon1">
+          <label for="questionName">No of Images to be selected:</label>
+          <input class="form-control" type="number" id="noOfImages" name="noOfImages" [max]="_.size(question.options)" min="1" [(ngModel)]="question.noOfImages"/>
+        </div>
+      </div>
+
+      <!--Required Field-->
+      <div class="row m-0 mb-3 mt-3" *ngIf="!_.includes(['CONTENT', 'YES_NO'], question.type)">
+        <label style="width: calc(100% - 36px)" class="cursor-hand" for="required">Required:</label>
+        <div>
+          <label class="switch mt-1">
+            <input type="checkbox" id="required" [(ngModel)]="question.required">
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+
+      <!--Multiple Choice Options-->
+      <ng-container *ngIf="_.includes(['DROPDOWN', 'MULTIPLE_CHOICE_SINGLE'], question.type)" >
+        <div class="input mt-2" *ngFor="let answer of question?.options; let i = index;">
+          <div type="text" class="form-control que l-h-2" aria-describedby="sizing-addon1">
+            {{i + 1}}) {{answer}} <i class="fa fa-times pull-right cursor-hand" aria-hidden="true" (click)="removeAnswer(i)"></i>
+          </div>
+        </div>
+      </ng-container>
+
+      <!--Add Answer button-->
+      <button type="button" class="btn btn-secondary btn-sm bot btn-block mt-2" *ngIf="_.includes(['DROPDOWN', 'MULTIPLE_CHOICE_SINGLE'], question.type)" (click)="addAnswerModal.modal.show()">ADD ANSWER</button>
+
+      <!--Multiple Image Upload-->
+      <ng-container *ngIf="question.type === 'MULTIPLE_IMAGE'">
+        <!--<image-upload></image-upload>-->
+        <button type="button" class="btn btn-primary pull-right mb-2" (click)="displayImagesModal.show();">Show Images</button>
+        <display-images #displayImagesModal [question]="question" (reCreateQuestion)="addAnswer.emit($event)"></display-images>
+      </ng-container>
+
+    </ng-container>
+  </div>
+
+    <div class="m-b-15">
+      <button type="button" class="btn btn-danger btn-block" (click)="deleteQuestion()">DEL</button>
+    </div>
+
+</div>
+<app-add-answer #addAnswerModal (addAnswer)="addAnswerToQuestion($event)"></app-add-answer>

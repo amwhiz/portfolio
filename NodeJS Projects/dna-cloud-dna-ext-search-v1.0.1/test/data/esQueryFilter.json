@@ -1,0 +1,41 @@
+{
+  "and": [
+    {
+      "terms": {
+        "descriptorStatus": [
+          "published",
+          "being_rated",
+          "removed",
+          "requires_revision"
+        ]
+      }
+    },
+    {
+      "nested": {
+        "path": "syllabuses",
+        "filter": {
+          "terms": {
+            "syllabusId": [
+              "5459d4f738418f5c216a2a5f"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "nested": {
+        "filter": {
+          "terms": {
+            "tagId": [
+              "5459cd1981c2042c17fd0429",
+              "5459cd0c81c2042c17fd0428",
+              "5459cd0981c2042c17fd0427",
+              "5459cd2181c2042c17fd042a"
+            ]
+          }
+        },
+        "path": "tags.tags"
+      }
+    }
+  ]
+}

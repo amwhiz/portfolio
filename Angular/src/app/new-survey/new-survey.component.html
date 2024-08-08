@@ -1,0 +1,71 @@
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+  </nav>
+</header>
+<div class="container-fluid">
+  <div class="row">
+    <app-side-nav [currentPage]="'surveys'"></app-side-nav>
+    <main role="main" class="col-sm-9 ml-sm-auto col-md-10 pl-0 pr-0 page-header">
+      <div class="row page-title pt-3 pl-3 pb-3">
+        <div class="col-sm-3 pl-0">
+          <h4 class="title-color">{{type === 'create' ? 'New' : 'Edit'}} Survey</h4>
+        </div>
+        <div class="col-sm-9 pr-4">
+          <ng-container *ngIf="!isFormInvalid(); else invalidForm">
+            <button class="btn btn-success float-right" (click)="addSurveyDetails.show()">Done</button>
+          </ng-container>
+          <ng-template #invalidForm>
+            <button class="btn btn-disabled float-right" disabled>Done</button>
+          </ng-template>
+          <button class="btn btn-secondary float-right btn-grey mr-3" (click)="navigateToSurvey(false)">Cancel</button>
+        </div>
+      </div>
+    </main>
+    <!-- main content -->
+    <main class="col-12 ml-sm-auto col-md-10 pl-0 pr-0 page-header">
+      <div class="container-fluid content">
+        <div class="col-md-12 p-l-r-5">
+          <app-question-page [noQuestionsPage]="currentPage === 1" [coverImage]="questions.picture" [questionsForPage]="getQuestionsForCurrentPage()" [pageNo]="currentPage" [totalPages]="_.size(questions[language])" (deleteQuestionNo)="deleteQuestion($event)" (removePage)="removePage()" (addAnswer)="updateQuestionToQuestion($event)" (updatePicture)="updatePage($event)" (updateCoverImage)="updateCoverImage($event)"></app-question-page>
+          <div class="text-center col-8 pt-3 pb-3">
+            <p class="no-mar mr-32">Page {{currentPage}} of {{_.size(questions[language])}}</p>
+          </div>
+          <div>
+            <div class="row bt">
+              <div class="col-8 pr-30">
+                <button type="button" class="btn btn-warning btn-sm w-auto" (click)="addPage()">ADD PAGE</button>
+                <ng-container *ngIf="currentPage !== 1">
+                  <button type="button" class="btn btn-pink mr-3 ml-3 w-auto" (click)="pageTitle.show()">ADD PAGE TITLE</button>
+                  <button type="button" class="btn btn-primary btn-sm blue w-auto" (click)="addQuestion.modal.show()">ADD QUESTION</button>
+                </ng-container>
+                <button type="button" class="btn btn-grey pull-right w-auto" [disabled]="currentPage >= _.size(questions[language])" (click)="currentPage = currentPage + 1">NEXT</button>
+                <button type="button" class="btn btn-grey pull-right mr-3 w-auto" [disabled]="currentPage <=1" (click)="currentPage = currentPage - 1">PREV</button>
+              </div>
+
+              <div class="col-4 pr-0">
+                <ng-container *ngIf="currentPage !== 1">
+                  <div class="btn-group pull-right mr--12" role="group" aria-label="Basic example" data-toggle="buttons">
+                    <label class="btn btn-primary bo cursor-hand no-mar" [ngClass]="{'active': language==='en'}" (click)="setLang('en')">
+                      <input type="radio" name="en" id="en" autocomplete="off" [checked]="language==='en'"> English
+                    </label>
+                    <label class="btn btn-primary bo cursor-hand no-mar" [ngClass]="{'active': language==='es'}" (click)="setLang('es')">
+                      <input type="radio" name="es" id="es" autocomplete="off" [checked]="language==='es'"> Spanish
+                    </label>
+                  </div>
+                </ng-container>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+<!--Add New Page Title-->
+<app-modal #pageTitle [heading]="'New Page Title'" [successBtnDisabled]="!_.size(newPageTitle.value)" [successBtn]="'Done'" (onClose)="newPageTitle.value = ''; newPageSubTitle.value = ''; pageTitle.hide()" (onSuccess)="applyNewPageTitleForCurrentPage(newPageTitle.value, newPageSubTitle.value); newPageTitle.value= ''; newPageSubTitle.value = ''; pageTitle.hide()">
+  <p class="text-center">Please Enter a title for this new page</p>
+  <input #newPageTitle [(ngModel)]="newPageTitle.value" type="text" class="form-control m-b-10" placeholder="Page title here...">
+  <input #newPageSubTitle type="text" class="form-control" placeholder="Page subtitle here...">
+</app-modal>
+<app-add-question #addQuestion (addQuestion)="addQuestionToQuestions($event)"></app-add-question>
+<app-add-survey-details #addSurveyDetails [question]="questions" [name]="surveyName" [clientName]="clientName" [surveyId]="surveyId" [type]="type" (navigateToSurveys)="navigateToSurvey(true)"></app-add-survey-details>
+

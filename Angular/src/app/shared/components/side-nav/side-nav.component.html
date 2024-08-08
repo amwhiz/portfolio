@@ -1,0 +1,16 @@
+<nav class="col-sm-3 col-md-2 d-none d-sm-block sidebar">
+  <ul class="nav nav-pills flex-column">
+    <li class="nav-item">
+      <a class="nav-link" [ngClass]="{'active': currentPage === 'events'}" [routerLink]="'/events'" href="javascript:void(0);"><i class="fa fa-calendar" aria-hidden="true"></i> Events</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [ngClass]="{'active': currentPage === 'surveys'}" [routerLink]="'/surveys'" href="javascript:void(0);"><i class="fa fa-check" aria-hidden="true"></i> Surveys</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="javascript:void(0);"><i class="fa fa-cog" aria-hidden="true"></i> Settings</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" (click)="logout()" href="javascript:void(0);"><i class="fa fa-power-off" aria-hidden="true"></i> Logout</a>
+    </li>
+  </ul>
+</nav>

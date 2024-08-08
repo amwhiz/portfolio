@@ -1,0 +1,59 @@
+{
+  "descriptorId": "552cf7f0af2d13d575e4e81f",
+  "descriptiveId": "qwe",
+  "descriptor": "qwe",
+  "attribution": "qwe",
+  "syllabuses": [
+    {
+      "syllabusId": "54fe84eb070b48b42932d4c5",
+      "syllabusName": "GLGRAM"
+    }
+  ],
+  "descriptors": [],
+  "descriptorStatus": "published",
+  "tags": [
+    {
+      "tagTypeId": "5459cc0481c2042c17fd041d",
+      "tagTypeName": "GSE Value",
+      "tags": [
+        {
+          "tagId": "5459d0d281c2042c17fd043c",
+          "tagName": "11"
+        }
+      ]
+    },
+    {
+      "tagTypeId": "5459cc1081c2042c17fd041f",
+      "tagTypeName": "Skill",
+      "tags": [
+        {
+          "tagId": "5459cc9e81c2042c17fd0422",
+          "tagName": "Writing"
+        }
+      ]
+    },
+    {
+      "tagTypeId": "5459cc1981c2042c17fd0420",
+      "tagTypeName": "CEFR",
+      "tags": [
+        {
+          "tagId": "5459cd3281c2042c17fd042c",
+          "tagName": "B2 (59-66)"
+        }
+      ]
+    }
+  ],
+  "status": true,
+  "created": "2015-04-14T11:20:16.529Z",
+  "createdBy": {
+    "userId": "54fd860e5c10533911ba3670",
+    "firstName": "John",
+    "lastName": "Doe"
+  },
+  "updated": "2015-04-14T11:20:16.529Z",
+  "updatedBy": {
+    "userId": "54fd860e5c10533911ba3670",
+    "firstName": "John",
+    "lastName": "Doe"
+  }
+}

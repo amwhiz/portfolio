@@ -1,0 +1,57 @@
+<div class="row no-mar">
+  <div class="col-md-3">
+    <p class="showing-events m-b-0">showing {{pagination?.index + 1}} to {{pagination?.index +
+      pagination?.included_results}} of {{pagination?.total_results}} {{type}}</p>
+  </div>
+  <div class="col-md-9">
+    <ul class="pagination pull-right">
+      <li>
+        Rows per page:
+      </li>
+      <li>
+        <div class="btn-group dropup" dropdown [dropup]="true">
+              <span dropdownToggle class="dropdown-toggle" id="order-count-option">
+                {{limit > 100 ? 'All' : limit}}
+              </span>
+          <ul id="order-count-dropdown" *dropdownMenu class="dropdown-menu" role="menu">
+            <li role="menuitem" (click)="onPagination(0, 10)"><a id="order-count-10" class="dropdown-item"
+                                                                 href="javascript:void(0)">10</a></li>
+            <li role="menuitem" (click)="onPagination(0, 25)"><a id="order-count-25" class="dropdown-item"
+                                                                 href="javascript:void(0)">25</a></li>
+            <li role="menuitem" (click)="onPagination(0, 50)"><a id="order-count-50" class="dropdown-item"
+                                                                 href="javascript:void(0)">50</a></li>
+            <li role="menuitem" (click)="onPagination(0, 100)"><a id="order-count-100" class="dropdown-item"
+                                                                  href="javascript:void(0)">100</a></li>
+            <li role="menuitem" (click)="onPagination(0, 100000)"><a id="order-count-all" class="dropdown-item"
+                                                                     href="javascript:void(0)">All</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <ng-container *ngIf="pagination?.index === 0">
+        <li class="" [ngClass]="{'pagination-disabled': pagination?.index === 0}">
+          <i class="fa fa-angle-left fa-icons" id="navigate-left-disabled"></i>
+        </li>
+      </ng-container>
+      <ng-container *ngIf="pagination?.index !== 0">
+        <li class="cursor-hand" [ngClass]="{'pagination-disabled': pagination?.index === 0}"
+            (click)="onPagination(pagination?.index - _.toInteger(limit), limit)">
+          <i class="fa fa-angle-left fa-icons" id="navigate-left"></i>
+        </li>
+      </ng-container>
+      <ng-container *ngIf="!((pagination?.index + _.toInteger(limit)) < pagination?.total_results)">
+        <li class=""
+            [ngClass]="{'pagination-disabled': !((pagination?.index + _.toInteger(limit)) < pagination?.total_results)}">
+          <i class="fa fa-angle-right fa-icons" id="navigate-right-disabled"></i>
+        </li>
+      </ng-container>
+      <ng-container *ngIf="(pagination?.index + _.toInteger(limit)) < pagination?.total_results">
+        <li class="cursor-hand"
+            [ngClass]="{'pagination-disabled': !((pagination?.index + _.toInteger(limit)) < pagination?.total_results)}"
+            (click)="onPagination(pagination?.index + _.toInteger(limit), limit)">
+          <i class="fa fa-angle-right fa-icons" id="navigate-right"></i>
+        </li>
+      </ng-container>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+{
+  "extends": "./tsconfig.paths.json",
+  "compilerOptions": {
+    "lib": ["ESNext", "ES5"],
+    "moduleResolution": "node",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "removeComments": true,
+    "sourceMap": true,
+    "target": "ES2020",
+    "outDir": "lib",
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+  },
+  "include": ["src/**/*.ts", "serverless.ts", "packages/**/*.ts"],
+  "exclude": [
+    "node_modules/**/*",
+    ".serverless/**/*",
+    ".webpack/**/*",
+    "_warmup/**/*",
+    ".vscode/**/*"
+  ],
+  "ts-node": {
+    "require": ["tsconfig-paths/register"]
+  }
+}

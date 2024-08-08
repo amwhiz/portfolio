@@ -1,0 +1,1031 @@
+{
+  "count": 1985,
+  "data": [
+    {
+      "descriptorId": "552cf5caaf2d13d575e4e7de",
+      "descriptiveId": "asd",
+      "descriptor": "asd",
+      "attribution": "asd",
+      "syllabuses": [
+        {
+          "syllabusId": "54fe84a2070b48b42932d4bd",
+          "syllabusName": "AL"
+        },
+        {
+          "syllabusId": "54fe84b8070b48b42932d4bf",
+          "syllabusName": "PL"
+        },
+        {
+          "syllabusId": "54fe84c5070b48b42932d4c1",
+          "syllabusName": "YL"
+        },
+        {
+          "syllabusId": "54fe84e0070b48b42932d4c3",
+          "syllabusName": "GLVOC"
+        },
+        {
+          "syllabusId": "54fe84eb070b48b42932d4c5",
+          "syllabusName": "GLGRAM"
+        }
+      ],
+      "descriptors": [],
+      "descriptorStatus": "requires_revision",
+      "tags": [
+        {
+          "tagTypeId": "5459cc0481c2042c17fd041d",
+          "tagTypeName": "GSE Value",
+          "tags": [
+            {
+              "tagId": "5459cffe81c2042c17fd043a",
+              "tagName": "10"
+            }
+          ]
+        },
+        {
+          "tagTypeId": "5459cc1081c2042c17fd041f",
+          "tagTypeName": "Skill",
+          "tags": [
+            {
+              "tagId": "5459cc9681c2042c17fd0421",
+              "tagName": "Reading"
+            },
+            {
+              "tagId": "5459cc9681c2042c17fd0422",
+              "tagName": "Writing"
+            }
+          ]
+        }
+      ],
+      "status": true,
+      "created": "2015-04-14T11:11:06.943Z",
+      "createdBy": {
+        "userId": "54fd860e5c10533911ba3670",
+        "firstName": "John",
+        "lastName": "Doe"
+      },
+      "updated": "2015-04-14T11:11:06.943Z",
+      "updatedBy": {
+        "userId": "54fd860e5c10533911ba3670",
+        "firstName": "John",
+        "lastName": "Doe"
+      }
+    },
+    {
+      "descriptorId": "551d207b1d942c1a6a018ad2",
+      "descriptiveId": "ALAMAKOTA",
+      "descriptor": "ALAMAKOTA",
+      "attribution": "ALAMAKOTA",
+      "syllabuses": [
+        {
+          "syllabusId": "54fe84eb070b48b42932d4c5",
+          "syllabusName": "GLGRAM"
+        }
+      ],
+      "descriptors": [],
+      "descriptorStatus": "published",
+      "tags": [],
+      "status": true,
+      "created": "2015-04-02T10:56:59.684Z",
+      "createdBy": {
+        "userId": "54fd860e5c10533911ba3670",
+        "firstName": "John",
+        "lastName": "Doe"
+      },
+      "updated": "2015-04-02T10:56:59.684Z",
+      "updatedBy": {
+        "userId": "54fd860e5c10533911ba3670",
+        "firstName": "John",
+        "lastName": "Doe"
+      }
+    },
+    {
+      "descriptorId": "551d203c1d942c1a6a018abb",
+      "descriptiveId": "TEst222",
+      "descriptor": "eqwe",
+      "attribution": "aqwe",
+      "syllabuses": [
+        {
+          "syllabusId": "54fe84eb070b48b42932d4c5",
+          "syllabusName": "GLGRAM"
+        }
+      ],
+      "descriptors": [],
+      "descriptorStatus": "being_rated",
+      "tags": [
+        {
+          "tagTypeId": "5459cc0b81c2042c17fd041e",
+          "tagTypeName": "GSE Band",
+          "tags": [
+            {
+              "tagId": "5459cda481c2042c17fd0436",
+              "tagName": "59 - 66"
+            }
+          ]
+        },
+        {
+          "tagTypeId": "5459cc1081c2042c17fd041f",
+          "tagTypeName": "Skill",
+          "tags": [
+            {
+              "tagId": "5459cca481c2042c17fd0423",
+              "tagName": "Listening"
+            },
+            {
+              "tagId": "5459cccc81c2042c17fd0425",
+              "tagName": "Spoken Interaction"
+            }
+          ]
+        }
+      ],
+      "status": true,
+      "created": "2015-04-02T10:55:56.703Z",
+      "createdBy": {
+        "userId": "54fd860e5c10533911ba3670",
+        "firstName": "John",
+        "lastName": "Doe"
+      },
+      "updated": "2015-04-02T10:55:56.703Z",
+      "updatedBy": {
+        "userId": "54fd860e5c10533911ba3670",
+        "firstName": "John",
+        "lastName": "Doe"
+      }
+    },
+    {
+      "descriptorId": "54feb5b243ebc27e2c101320",
+      "descriptiveId": "ALWP0471",
+      "descriptor": "Can edit and improve a linguistically complex  text.",
+      "attribution": "(P)",
+      "syllabuses": [
+        {
+          "syllabusId": "54fe84a2070b48b42932d4bd",
+          "syllabusName": "AL"
+        }
+      ],
+      "descriptors": [],
+      "descriptorStatus": "being_rated",
+      "additionalInformation": {
+        "draftIds": null,
+        "batch": "Batch 4",
+        "source": null,
+        "sourceDescriptor": null,
+        "estimatedLevel": "B2+ (67-75)",
+        "anchor": null,
+        "CEFRCommunicativeActivity": null,
+        "functionNotion": null,
+        "example": null,
+        "n2000_logit": null
+      },
+      "tags": [
+        {
+          "tagTypeId": "5459cc1081c2042c17fd041f",
+          "tagTypeName": "Skill",
+          "tags": [
+            {
+              "tagId": "5459cc9e81c2042c17fd0422",
+              "tagName": "Writing"
+            }
+          ]
+        }
+      ],
+      "status": true,
+      "created": "2015-03-10T09:13:22.081Z",
+      "createdBy": {
+        "userId": "54e70cc6bcdcc24852360acb",
+        "firstName": "Personalisation",
+        "lastName": "Progress"
+      },
+      "updated": "2015-03-10T09:13:22.081Z",
+      "updatedBy": {
+        "userId": "54e70cc6bcdcc24852360acb",
+        "firstName": "Personalisation",
+        "lastName": "Progress"
+      }
+    },
+    {
+      "descriptorId": "54feb5b1b56f50802c545e66",
+      "descriptiveId": "ALWP0470",
+      "descriptor": "Can edit and improve a simple  text.",
+      "attribution": "(P)",
+      "syllabuses": [
+        {
+          "syllabusId": "54fe84a2070b48b42932d4bd",
+          "syllabusName": "AL"
+        }
+      ],
+      "descriptors": [],
+      "descriptorStatus": "being_rated",
+      "additionalInformation": {
+        "draftIds": null,
+        "batch": "Batch 4",
+        "source": null,
+        "sourceDescriptor": null,
+        "estimatedLevel": "B1+ (51-58)",
+        "anchor": null,
+        "CEFRCommunicativeActivity": null,
+        "functionNotion": null,
+        "example": null,
+        "n2000_logit": null
+      },
+      "tags": [
+        {
+          "tagTypeId": "5459cc1081c2042c17fd041f",
+          "tagTypeName": "Skill",
+          "tags": [
+            {
+              "tagId": "5459cc9e81c2042c17fd0422",
+              "tagName": "Writing"
+            },
+            {
+              "tagId": "5459cc9e81c2042c17fd0423",
+              "tagName": "Reading"
+            }
+          ]
+        }
+      ],
+      "status": true,
+      "created": "2015-03-10T09:13:21.824Z",
+      "createdBy": {
+        "userId": "54e70cc6bcdcc24852360acb",
+        "firstName": "Personalisation",
+        "lastName": "Progress"
+      },
+      "updated": "2015-03-10T09:13:21.824Z",
+      "updatedBy": {
+        "userId": "54e70cc6bcdcc24852360acb",
+        "firstName": "Personalisation",
+        "lastName": "Progress"
+      }
+    },
+    {
+      "descriptorId": "54feb5b143ebc27e2c10131d",
+      "descriptiveId": "ALWP0469",
+      "descriptor": "Can edit and improve a simple  text, given guidelines.",
+      "attribution": "(P)",
+      "syllabuses": [
+        {
+          "syllabusId": "54fe84a2070b48b42932d4bd",
+          "syllabusName": "AL"
+        }
+      ],
+      "descriptors": [],
+      "descriptorStatus": "being_rated",
+      "additionalInformation": {
+        "draftIds": null,
+        "batch": "Batch 4",
+        "source": null,
+        "sourceDescriptor": null,
+        "estimatedLevel": "B1+ (51-58)",
+        "anchor": null,
+        "CEFRCommunicativeActivity": null,
+        "functionNotion": null,
+        "example": null,
+        "n2000_logit": null
+      },
+      "tags": [
+        {
+          "tagTypeId": "5459cc1081c2042c17fd041f",
+          "tagTypeName": "Skill",
+          "tags": [
+            {
+              "tagId": "5459cc9e81c2042c17fd0422",
+              "tagName": "Writing"
+            }
+          ]
+        }
+      ],
+      "status": true,
+      "created": "2015-03-10T09:13:21.580Z",
+      "createdBy": {
+        "userId": "54e70cc6bcdcc24852360acb",
+        "firstName": "Personalisation",
+        "lastName": "Progress"
+      },
+      "updated": "2015-03-10T09:13:21.580Z",
+      "updatedBy": {
+        "userId": "54e70cc6bcdcc24852360acb",
+        "firstName": "Personalisation",
+        "lastName": "Progress"
+      }
+    },
+    {
+      "descriptorId": "54feb5b1b56f50802c545e63",
+      "descriptiveId": "ALWP0468",
+      "descriptor": "Can write a simple descriptive  essay, if provided with a model.",
+      "attribution": "(P)",
+      "syllabuses": [
+        {
+          "syllabusId": "54fe84a2070b48b42932d4bd",
+          "syllabusName": "AL"
+        }
+      ],
+      "descriptors": [],
+      "descriptorStatus": "being_rated",
+      "additionalInformation": {
+        "draftIds": null,
+        "batch": "Batch 4",
+        "source": null,
+        "sourceDescriptor": null,
+        "estimatedLevel": "B1+ (51-58)",
+        "anchor": null,
+        "CEFRCommunicativeActivity": null,
+        "functionNotion": null,
+        "example": null,
+        "n2000_logit": null
+      },
+      "tags": [
+        {
+          "tagTypeId": "5459cc1081c2042c17fd041f",
+          "tagTypeName": "Skill",
+          "tags": [
+            {
+              "tagId": "5459cc9e81c2042c17fd0422",
+              "tagName": "Writing"
+            }
+          ]
+        }
+      ],
+      "status": true,
+      "created": "2015-03-10T09:13:21.328Z",
+      "createdBy": {
+        "userId": "54e70cc6bcdcc24852360acb",
+        "firstName": "Personalisation",
+        "lastName": "Progress"
+      },
+      "updated": "2015-03-10T09:13:21.328Z",
+      "updatedBy": {
+        "userId": "54e70cc6bcdcc24852360acb",
+        "firstName": "Personalisation",
+        "lastName": "Progress"
+      }
+    },
+    {
+      "descriptorId": "54feb5b143ebc27e2c10131a",
+      "descriptiveId": "ALWP0467",
+      "descriptor": "Can write a linguistically complex discursive  essay.",
+      "attribution": "(P)",
+      "syllabuses": [
+        {
+          "syllabusId": "54fe84a2070b48b42932d4bd",
+          "syllabusName": "AL"
+        }
+      ],
+      "descriptors": [],
+      "descriptorStatus": "being_rated",
+      "additionalInformation": {
+        "draftIds": null,
+        "batch": "Batch 4",
+        "source": null,
+        "sourceDescriptor": null,
+        "estimatedLevel": "C1 (76-84)",
+        "anchor": null,
+        "CEFRCommunicativeActivity": null,
+        "functionNotion": null,
+        "example": null,
+        "n2000_logit": null
+      },
+      "tags": [
+        {
+          "tagTypeId": "5459cc1081c2042c17fd041f",
+          "tagTypeName": "Skill",
+          "tags": [
+            {
+              "tagId": "5459cc9e81c2042c17fd0422",
+              "tagName": "Writing"
+            }
+          ]
+        }
+      ],
+      "status": true,
+      "created": "2015-03-10T09:13:21.067Z",
+      "createdBy": {
+        "userId": "54e70cc6bcdcc24852360acb",
+        "firstName": "Personalisation",
+        "lastName": "Progress"
+      },
+      "updated": "2015-03-10T09:13:21.067Z",
+      "updatedBy": {
+        "userId": "54e70cc6bcdcc24852360acb",
+        "firstName": "Personalisation",
+        "lastName": "Progress"
+      }
+    },
+    {
+      "descriptorId": "54feb5b0b56f50802c545e60",
+      "descriptiveId": "ALWP0466",
+      "descriptor": "Can write a simple discursive  essay.",
+      "attribution": "(P)",
+      "syllabuses": [
+        {
+          "syllabusId": "54fe84a2070b48b42932d4bd",
+          "syllabusName": "AL"
+        }
+      ],
+      "descriptors": [],
+      "descriptorStatus": "being_rated",
+      "additionalInformation": {
+        "draftIds": null,
+        "batch": "Batch 4",
+        "source": null,
+        "sourceDescriptor": null,
+        "estimatedLevel": "B2 (59-66)",
+        "anchor": null,
+        "CEFRCommunicativeActivity": null,
+        "functionNotion": null,
+        "example": null,
+        "n2000_logit": null
+      },
+      "tags": [
+        {
+          "tagTypeId": "5459cc1081c2042c17fd041f",
+          "tagTypeName": "Skill",
+          "tags": [
+            {
+              "tagId": "5459cc9e81c2042c17fd0422",
+              "tagName": "Writing"
+            }
+          ]
+        }
+      ],
+      "status": true,
+      "created": "2015-03-10T09:13:20.812Z",
+      "createdBy": {
+        "userId": "54e70cc6bcdcc24852360acb",
+        "firstName": "Personalisation",
+        "lastName": "Progress"
+      },
+      "updated": "2015-03-10T09:13:20.812Z",
+      "updatedBy": {
+        "userId": "54e70cc6bcdcc24852360acb",
+        "firstName": "Personalisation",
+        "lastName": "Progress"
+      }
+    },
+    {
+      "descriptorId": "54feb5b043ebc27e2c101317",
+      "descriptiveId": "ALWP0465",
+      "descriptor": "Can write a simple discursive  essay, if provided with a model.",
+      "attribution": "(P)",
+      "syllabuses": [
+        {
+          "syllabusId": "54fe84a2070b48b42932d4bd",
+          "syllabusName": "AL"
+        }
+      ],
+      "descriptors": [],
+      "descriptorStatus": "being_rated",
+      "additionalInformation": {
+        "draftIds": null,
+        "batch": "Batch 4",
+        "source": null,
+        "sourceDescriptor": null,
+        "estimatedLevel": "B1+ (51-58)",
+        "anchor": null,
+        "CEFRCommunicativeActivity": null,
+        "functionNotion": null,
+        "example": null,
+        "n2000_logit": null
+      },
+      "tags": [
+        {
+          "tagTypeId": "5459cc1081c2042c17fd041f",
+          "tagTypeName": "Skill",
+          "tags": [
+            {
+              "tagId": "5459cc9e81c2042c17fd0422",
+              "tagName": "Writing"
+            }
+          ]
+        }
+      ],
+      "status": true,
+      "created": "2015-03-10T09:13:20.535Z",
+      "createdBy": {
+        "userId": "54e70cc6bcdcc24852360acb",
+        "firstName": "Personalisation",
+        "lastName": "Progress"
+      },
+      "updated": "2015-03-10T09:13:20.535Z",
+      "updatedBy": {
+        "userId": "54e70cc6bcdcc24852360acb",
+        "firstName": "Personalisation",
+        "lastName": "Progress"
+      }
+    },
+    {
+      "descriptorId": "54feb5b0b56f50802c545e5d",
+      "descriptiveId": "ALWP0464",
+      "descriptor": "Can write a review of a simple  text, using appropriate  conventions, if provided with a model.",
+      "attribution": "(P)",
+      "syllabuses": [
+        {
+          "syllabusId": "54fe84a2070b48b42932d4bd",
+          "syllabusName": "AL"
+        }
+      ],
+      "descriptors": [],
+      "descriptorStatus": "being_rated",
+      "additionalInformation": {
+        "draftIds": null,
+        "batch": "Batch 4",
+        "source": null,
+        "sourceDescriptor": null,
+        "estimatedLevel": "B1 (43-50)",
+        "anchor": null,
+        "CEFRCommunicativeActivity": null,
+        "functionNotion": null,
+        "example": null,
+        "n2000_logit": null
+      },
+      "tags": [
+        {
+          "tagTypeId": "5459cc1081c2042c17fd041f",
+          "tagTypeName": "Skill",
+          "tags": [
+            {
+              "tagId": "5459cc9e81c2042c17fd0422",
+              "tagName": "Writing"
+            }
+          ]
+        }
+      ],
+      "status": true,
+      "created": "2015-03-10T09:13:20.280Z",
+      "createdBy": {
+        "userId": "54e70cc6bcdcc24852360acb",
+        "firstName": "Personalisation",
+        "lastName": "Progress"
+      },
+      "updated": "2015-03-10T09:13:20.280Z",
+      "updatedBy": {
+        "userId": "54e70cc6bcdcc24852360acb",
+        "firstName": "Personalisation",
+        "lastName": "Progress"
+      }
+    },
+    {
+      "descriptorId": "54feb5b043ebc27e2c101314",
+      "descriptiveId": "ALWP0463",
+      "descriptor": "Can write a review of a simple  text, using appropriate  conventions.",
+      "attribution": "(P)",
+      "syllabuses": [
+        {
+          "syllabusId": "54fe84a2070b48b42932d4bd",
+          "syllabusName": "AL"
+        }
+      ],
+      "descriptors": [],
+      "descriptorStatus": "being_rated",
+      "additionalInformation": {
+        "draftIds": null,
+        "batch": "Batch 4",
+        "source": null,
+        "sourceDescriptor": null,
+        "estimatedLevel": "B1+ (51-58)",
+        "anchor": null,
+        "CEFRCommunicativeActivity": null,
+        "functionNotion": null,
+        "example": null,
+        "n2000_logit": null
+      },
+      "tags": [
+        {
+          "tagTypeId": "5459cc1081c2042c17fd041f",
+          "tagTypeName": "Skill",
+          "tags": [
+            {
+              "tagId": "5459cc9e81c2042c17fd0422",
+              "tagName": "Writing"
+            }
+          ]
+        }
+      ],
+      "status": true,
+      "created": "2015-03-10T09:13:20.009Z",
+      "createdBy": {
+        "userId": "54e70cc6bcdcc24852360acb",
+        "firstName": "Personalisation",
+        "lastName": "Progress"
+      },
+      "updated": "2015-03-10T09:13:20.009Z",
+      "updatedBy": {
+        "userId": "54e70cc6bcdcc24852360acb",
+        "firstName": "Personalisation",
+        "lastName": "Progress"
+      }
+    },
+    {
+      "descriptorId": "54feb5afb56f50802c545e5a",
+      "descriptiveId": "ALWP0462",
+      "descriptor": "Can write a review of a linguistically complex  text, using appropriate  conventions.",
+      "attribution": "(P)",
+      "syllabuses": [
+        {
+          "syllabusId": "54fe84a2070b48b42932d4bd",
+          "syllabusName": "AL"
+        }
+      ],
+      "descriptors": [],
+      "descriptorStatus": "being_rated",
+      "additionalInformation": {
+        "draftIds": null,
+        "batch": "Batch 4",
+        "source": null,
+        "sourceDescriptor": null,
+        "estimatedLevel": "C1 (76-84)",
+        "anchor": null,
+        "CEFRCommunicativeActivity": null,
+        "functionNotion": null,
+        "example": null,
+        "n2000_logit": null
+      },
+      "tags": [
+        {
+          "tagTypeId": "5459cc1081c2042c17fd041f",
+          "tagTypeName": "Skill",
+          "tags": [
+            {
+              "tagId": "5459cc9e81c2042c17fd0422",
+              "tagName": "Writing"
+            }
+          ]
+        }
+      ],
+      "status": true,
+      "created": "2015-03-10T09:13:19.754Z",
+      "createdBy": {
+        "userId": "54e70cc6bcdcc24852360acb",
+        "firstName": "Personalisation",
+        "lastName": "Progress"
+      },
+      "updated": "2015-03-10T09:13:19.754Z",
+      "updatedBy": {
+        "userId": "54e70cc6bcdcc24852360acb",
+        "firstName": "Personalisation",
+        "lastName": "Progress"
+      }
+    },
+    {
+      "descriptorId": "54feb5af43ebc27e2c101311",
+      "descriptiveId": "ALWP0461",
+      "descriptor": "Can take notes on a simple recorded presentation or lecture, if provided with an outline and able to pause and replay. ",
+      "attribution": "(P)",
+      "syllabuses": [
+        {
+          "syllabusId": "54fe84a2070b48b42932d4bd",
+          "syllabusName": "AL"
+        }
+      ],
+      "descriptors": [],
+      "descriptorStatus": "being_rated",
+      "additionalInformation": {
+        "draftIds": null,
+        "batch": "Batch 4",
+        "source": null,
+        "sourceDescriptor": null,
+        "estimatedLevel": "B1 (43-50)",
+        "anchor": null,
+        "CEFRCommunicativeActivity": null,
+        "functionNotion": null,
+        "example": null,
+        "n2000_logit": null
+      },
+      "tags": [
+        {
+          "tagTypeId": "5459cc1081c2042c17fd041f",
+          "tagTypeName": "Skill",
+          "tags": [
+            {
+              "tagId": "5459cc9e81c2042c17fd0422",
+              "tagName": "Writing"
+            }
+          ]
+        }
+      ],
+      "status": true,
+      "created": "2015-03-10T09:13:19.496Z",
+      "createdBy": {
+        "userId": "54e70cc6bcdcc24852360acb",
+        "firstName": "Personalisation",
+        "lastName": "Progress"
+      },
+      "updated": "2015-03-10T09:13:19.496Z",
+      "updatedBy": {
+        "userId": "54e70cc6bcdcc24852360acb",
+        "firstName": "Personalisation",
+        "lastName": "Progress"
+      }
+    },
+    {
+      "descriptorId": "54feb5afb56f50802c545e57",
+      "descriptiveId": "ALWP0460",
+      "descriptor": "Can refute a counterargument in written  work.",
+      "attribution": "(P)",
+      "syllabuses": [
+        {
+          "syllabusId": "54fe84a2070b48b42932d4bd",
+          "syllabusName": "AL"
+        }
+      ],
+      "descriptors": [],
+      "descriptorStatus": "being_rated",
+      "additionalInformation": {
+        "draftIds": null,
+        "batch": "Batch 4",
+        "source": null,
+        "sourceDescriptor": null,
+        "estimatedLevel": "B2+ (67-75)",
+        "anchor": null,
+        "CEFRCommunicativeActivity": null,
+        "functionNotion": null,
+        "example": null,
+        "n2000_logit": null
+      },
+      "tags": [
+        {
+          "tagTypeId": "5459cc1081c2042c17fd041f",
+          "tagTypeName": "Skill",
+          "tags": [
+            {
+              "tagId": "5459cc9e81c2042c17fd0422",
+              "tagName": "Writing"
+            }
+          ]
+        }
+      ],
+      "status": true,
+      "created": "2015-03-10T09:13:19.234Z",
+      "createdBy": {
+        "userId": "54e70cc6bcdcc24852360acb",
+        "firstName": "Personalisation",
+        "lastName": "Progress"
+      },
+      "updated": "2015-03-10T09:13:19.234Z",
+      "updatedBy": {
+        "userId": "54e70cc6bcdcc24852360acb",
+        "firstName": "Personalisation",
+        "lastName": "Progress"
+      }
+    },
+    {
+      "descriptorId": "54feb5ae43ebc27e2c10130e",
+      "descriptiveId": "ALWP0459",
+      "descriptor": "Can write a bibliography, if provided with a model.",
+      "attribution": "(P)",
+      "syllabuses": [
+        {
+          "syllabusId": "54fe84a2070b48b42932d4bd",
+          "syllabusName": "AL"
+        }
+      ],
+      "descriptors": [],
+      "descriptorStatus": "being_rated",
+      "additionalInformation": {
+        "draftIds": null,
+        "batch": "Batch 4",
+        "source": null,
+        "sourceDescriptor": null,
+        "estimatedLevel": "B1 (43-50)",
+        "anchor": null,
+        "CEFRCommunicativeActivity": null,
+        "functionNotion": null,
+        "example": null,
+        "n2000_logit": null
+      },
+      "tags": [
+        {
+          "tagTypeId": "5459cc1081c2042c17fd041f",
+          "tagTypeName": "Skill",
+          "tags": [
+            {
+              "tagId": "5459cc9e81c2042c17fd0422",
+              "tagName": "Writing"
+            }
+          ]
+        }
+      ],
+      "status": true,
+      "created": "2015-03-10T09:13:18.981Z",
+      "createdBy": {
+        "userId": "54e70cc6bcdcc24852360acb",
+        "firstName": "Personalisation",
+        "lastName": "Progress"
+      },
+      "updated": "2015-03-10T09:13:18.981Z",
+      "updatedBy": {
+        "userId": "54e70cc6bcdcc24852360acb",
+        "firstName": "Personalisation",
+        "lastName": "Progress"
+      }
+    },
+    {
+      "descriptorId": "54feb5aeb56f50802c545e54",
+      "descriptiveId": "ALWP0458",
+      "descriptor": "Can write a conclusion to a simple  essay, if provided with a model.",
+      "attribution": "(P)",
+      "syllabuses": [
+        {
+          "syllabusId": "54fe84a2070b48b42932d4bd",
+          "syllabusName": "AL"
+        }
+      ],
+      "descriptors": [],
+      "descriptorStatus": "being_rated",
+      "additionalInformation": {
+        "draftIds": null,
+        "batch": "Batch 4",
+        "source": null,
+        "sourceDescriptor": null,
+        "estimatedLevel": "B1 (43-50)",
+        "anchor": null,
+        "CEFRCommunicativeActivity": null,
+        "functionNotion": null,
+        "example": null,
+        "n2000_logit": null
+      },
+      "tags": [
+        {
+          "tagTypeId": "5459cc1081c2042c17fd041f",
+          "tagTypeName": "Skill",
+          "tags": [
+            {
+              "tagId": "5459cc9e81c2042c17fd0422",
+              "tagName": "Writing"
+            }
+          ]
+        }
+      ],
+      "status": true,
+      "created": "2015-03-10T09:13:18.724Z",
+      "createdBy": {
+        "userId": "54e70cc6bcdcc24852360acb",
+        "firstName": "Personalisation",
+        "lastName": "Progress"
+      },
+      "updated": "2015-03-10T09:13:18.724Z",
+      "updatedBy": {
+        "userId": "54e70cc6bcdcc24852360acb",
+        "firstName": "Personalisation",
+        "lastName": "Progress"
+      }
+    },
+    {
+      "descriptorId": "54feb5ae43ebc27e2c10130b",
+      "descriptiveId": "ALWP0457",
+      "descriptor": "Can write the conclusion to a thesis or dissertation.",
+      "attribution": "(P)",
+      "syllabuses": [
+        {
+          "syllabusId": "54fe84a2070b48b42932d4bd",
+          "syllabusName": "AL"
+        }
+      ],
+      "descriptors": [],
+      "descriptorStatus": "being_rated",
+      "additionalInformation": {
+        "draftIds": null,
+        "batch": "Batch 4",
+        "source": null,
+        "sourceDescriptor": null,
+        "estimatedLevel": "B2 (59-66)",
+        "anchor": null,
+        "CEFRCommunicativeActivity": null,
+        "functionNotion": null,
+        "example": null,
+        "n2000_logit": null
+      },
+      "tags": [
+        {
+          "tagTypeId": "5459cc1081c2042c17fd041f",
+          "tagTypeName": "Skill",
+          "tags": [
+            {
+              "tagId": "5459cc9e81c2042c17fd0422",
+              "tagName": "Writing"
+            }
+          ]
+        }
+      ],
+      "status": true,
+      "created": "2015-03-10T09:13:18.471Z",
+      "createdBy": {
+        "userId": "54e70cc6bcdcc24852360acb",
+        "firstName": "Personalisation",
+        "lastName": "Progress"
+      },
+      "updated": "2015-03-10T09:13:18.471Z",
+      "updatedBy": {
+        "userId": "54e70cc6bcdcc24852360acb",
+        "firstName": "Personalisation",
+        "lastName": "Progress"
+      }
+    },
+    {
+      "descriptorId": "54feb5aeb56f50802c545e51",
+      "descriptiveId": "ALWP0456",
+      "descriptor": "Can write the introduction to a thesis or dissertation.",
+      "attribution": "(P)",
+      "syllabuses": [
+        {
+          "syllabusId": "54fe84a2070b48b42932d4bd",
+          "syllabusName": "AL"
+        }
+      ],
+      "descriptors": [],
+      "descriptorStatus": "being_rated",
+      "additionalInformation": {
+        "draftIds": null,
+        "batch": "Batch 4",
+        "source": null,
+        "sourceDescriptor": null,
+        "estimatedLevel": "B2 (59-66)",
+        "anchor": null,
+        "CEFRCommunicativeActivity": null,
+        "functionNotion": null,
+        "example": null,
+        "n2000_logit": null,
+        "someOtherField0": "someOtherField0 VALUE In descriptor 54feb5aeb56f50802c545e51",
+        "someOtherField2": "someOtherField2 VALUE In descriptor 54feb5aeb56f50802c545e51",
+        "Field with spaces in name": "Field with spaces in name VALUE"
+      },
+      "tags": [
+        {
+          "tagTypeId": "5459cc1081c2042c17fd041f",
+          "tagTypeName": "Skill",
+          "tags": [
+            {
+              "tagId": "5459cc9e81c2042c17fd0422",
+              "tagName": "Writing"
+            }
+          ]
+        }
+      ],
+      "status": true,
+      "created": "2015-03-10T09:13:18.215Z",
+      "createdBy": {
+        "userId": "54e70cc6bcdcc24852360acb",
+        "firstName": "Personalisation",
+        "lastName": "Progress"
+      },
+      "updated": "2015-03-10T09:13:18.215Z",
+      "updatedBy": {
+        "userId": "54e70cc6bcdcc24852360acb",
+        "firstName": "Personalisation",
+        "lastName": "Progress"
+      }
+    },
+    {
+      "descriptorId": "54feb5ad43ebc27e2c101308",
+      "descriptiveId": "ALWP0455",
+      "descriptor": "Can write an introduction to a simple  essay, if provided with a model.",
+      "attribution": "(P)",
+      "syllabuses": [
+        {
+          "syllabusId": "54fe84a2070b48b42932d4bd",
+          "syllabusName": "AL"
+        }
+      ],
+      "descriptors": [],
+      "descriptorStatus": "being_rated",
+      "additionalInformation": {
+        "draftIds": null,
+        "batch": "Batch 4",
+        "source": null,
+        "sourceDescriptor": null,
+        "estimatedLevel": "B1 (43-50)",
+        "anchor": null,
+        "CEFRCommunicativeActivity": null,
+        "functionNotion": null,
+        "example": null,
+        "n2000_logit": null,
+        "someOtherField1": "someOtherField1 VALUE",
+        "someOtherField2": "someOtherField2 VALUE"
+      },
+      "tags": [
+        {
+          "tagTypeId": "5459cc1081c2042c17fd041f",
+          "tagTypeName": "Skill",
+          "tags": [
+            {
+              "tagId": "5459cc9e81c2042c17fd0422",
+              "tagName": "Writing"
+            }
+          ]
+        }
+      ],
+      "status": true,
+      "created": "2015-03-10T09:13:17.950Z",
+      "createdBy": {
+        "userId": "54e70cc6bcdcc24852360acb",
+        "firstName": "Personalisation",
+        "lastName": "Progress"
+      },
+      "updated": "2015-03-10T09:13:17.950Z",
+      "updatedBy": {
+        "userId": "54e70cc6bcdcc24852360acb",
+        "firstName": "Personalisation",
+        "lastName": "Progress"
+      }
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+<app-modal #newOption [heading]="'New Option'" [successBtnDisabled]="!_.size(optionName.value)" [successBtn]="'Next'" (onSuccess)="addAnswerToQuestion(optionName.value); optionName.value =''; newOption.hide()">
+  <p class="text-center">Enter an option?</p>
+  <input #optionName [(ngModel)]="optionName.value" type="text" class="form-control" placeholder="Enter Option here" required/>
+  <!--<p class="error" *ngIf="!_.trim(optionName.value) && optionName.touched">Please Enter an option.</p>-->
+</app-modal>

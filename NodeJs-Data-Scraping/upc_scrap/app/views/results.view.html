@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>{{title}}</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" type="text/css" href="{{urlPrefix}}/assets/bootstrap/css/bootstrap.css">
+
+    <style type="text/css">
+      body {
+        padding-top: 50px;
+      }
+      .starter-template {
+        padding: 40px 15px;
+      }
+    </style>
+    <script type="text/javascript">
+    	var result = {{result | json | safe}};
+    </script>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="javascript:void(0);">{{title}}</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="{{urlPrefix}}/"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+            <li><a href="{{urlPrefix}}/search"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Search&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+
+      	<div class="starter-template">
+          <div style="padding-top:80px;margin: 0px auto;">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Search Result</h3>
+                </div>
+                <div class="panel-body">
+          {% if !result  %}
+            {% if !noResult %}
+						<div style="margin-top:30px">
+							<div class="container">
+								<h4>There is no search result</h4>
+							</div>
+						</div>
+            {% endif %}
+					{% endif %}
+
+          {% if noResult %}
+            <div style="margin-top:30px">
+              <div class="container">
+                <h4>Requested UPC Codes are already processed..</h4>
+              </div>
+            </div>
+          {% endif %}
+
+					{% if result %}
+						<div style="margin-top:30px;">
+								<table id='result' class='table table-striped table-bordered'>
+									<thead>
+										<tr>
+											<th>UPC Code</th>
+											<th>attr_power</th>
+											<th>attr_bc</th>
+											<th>attr_diameter</th>
+											<th>attr_cylinder</th>
+											<th>attr_axis</th>
+											<th>attr_add</th>
+											<th>attr_color</th>
+											<th>Product Name</th>
+											<th>Brand Name</th>
+										</tr>
+									</thead>
+									<tbody></tbody>
+								</table>
+						</div>
+					{% endif %}
+                </div>
+            </div>
+          </div>
+    	</div>
+    </div>
+    <!-- /.container -->
+    <script type="text/javascript" src ='{{urlPrefix}}/assets/js/lib/jquery-2.1.4.min.js'></script>
+	<script type="text/javascript">
+		if (typeof result === 'object') {
+			for(var i=0; i<result.length; i++) {
+				var data = JSON.parse(result[i]);
+				var tag = '<tr>';
+				tag += '<td>' + data.upc_code + '</td>';
+				tag += '<td>' + data.specification.p + '</td>';
+				tag += '<td>' + data.specification.bc + '</td>';
+				tag += '<td>' + data.specification.d + '</td>';
+				tag += '<td>' + data.specification.c + '</td>';
+				tag += '<td>' + data.specification.ax + '</td>';
+				tag += '<td>' + data.specification.ot + '</td>';
+				tag += '<td>' + 'null' + '</td>';
+				tag += '<td>' + data.product_name + '</td>';
+				tag += '<td>' + data.brand_name + '</td>';
+				tag += '</tr>';
+				$('#result tbody').append(tag);
+			}
+		}
+	</script>
+  </body>
+</html>

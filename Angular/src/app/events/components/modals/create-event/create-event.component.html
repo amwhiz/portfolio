@@ -1,0 +1,70 @@
+<div bsModal #createEvent="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-center" *ngIf="type === 'create'">New Event</h5>
+        <h5 class="modal-title text-center" *ngIf="type === 'update'">Edit Event</h5>
+      </div>
+      <div class="modal-body">
+        <p>Please provide the following information</p>
+        <form [formGroup]="createEventForm">
+          <label>Event Name</label>
+          <input type="text" class="form-control" placeholder="enter event name here..."
+                 [formControl]="createEventForm.controls['eventName']">
+          <div class="alert"
+               *ngIf="!createEventForm.controls['eventName'].valid && createEventForm.controls['eventName'].touched">
+            Event name required
+          </div>
+          <br>
+          <div class="row">
+            <span class="col-6">
+              <label>Start Date</label>
+              <input type="date" class="form-control" [formControl]="createEventForm.controls['startDate']"
+                     placeholder="Start date" [value]="createEventForm.controls['startDate']">
+              <div class="alert"
+                   *ngIf="!createEventForm.controls['startDate'].valid && createEventForm.controls['startDate'].touched">Start Date required</div>
+            </span>
+            <span class="col-6">
+              <label>End Date</label>
+              <input type="date" class="form-control" [formControl]="createEventForm.controls['endDate']"
+                     placeholder="End date">
+              <div class="alert"
+                   *ngIf="!createEventForm.controls['endDate'].valid && createEventForm.controls['endDate'].touched">End Date required</div>
+            </span>
+          </div>
+          <div class="alert"
+               *ngIf="!areDatesValid() && createEventForm.controls['endDate'].dirty && createEventForm.controls['startDate'].dirty">
+            Select Valid Dates.
+          </div>
+          <br>
+          <label>Select Survey</label><br>
+          <!--For Editing Event-->
+          <select *ngIf="type === 'update'" [formControl]="createEventForm.controls['surveyId']" (change)="selectSurvey($event.target.value)" disabled>
+            <option *ngFor="let survey of surveys" class="form-control" [value]="survey.id">{{survey.name}}</option>
+          </select>
+          <!--For Creating Event-->
+          <select *ngIf="type === 'create'" [formControl]="createEventForm.controls['surveyId']" (change)="selectSurvey($event.target.value)">
+            <option *ngFor="let survey of surveys" class="form-control" [value]="survey.id">{{survey.name}}</option>
+          </select>
+          <div class="alert"
+               *ngIf="!createEventForm.controls['surveyId'].valid && createEventForm.controls['surveyId'].touched">Please select a survey from the list</div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <ng-container>
+          <button class="btn-flat btn-flat-default" tabindex="12" id="cancelBtn" (click)="hide()">
+            Cancel
+          </button>
+          <button *ngIf="type === 'create'" class="btn-flat btn-flat-danger pull-xs-right" tabindex="11" id="successBtn"
+                  [disabled]="createEventForm.invalid || !areDatesValid()" (click)="onSuccess()">{{successBtn}}</button>
+          <button *ngIf="type === 'update'" class="btn-flat btn-flat-danger pull-xs-right" tabindex="11" id="successBtn"
+                  [disabled]="createEventForm.invalid || !areDatesValid()" (click)="onUpdate()">{{successBtn}}</button>
+        </ng-container>
+        <ng-template>
+        </ng-template>
+      </div>
+    </div>
+    <app-page-spinner #spinner [visible]="loading"></app-page-spinner>
+  </div>
+</div>

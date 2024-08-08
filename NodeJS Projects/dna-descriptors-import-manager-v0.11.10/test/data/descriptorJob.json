@@ -1,0 +1,48 @@
+{
+  "attempts" : null,
+  "name" : "import",
+  "params" : {
+    "descriptor" : {
+      "Descriptive ID" : "TESTVEENA001",
+      "Draft IDs" : "10067",
+      "Status" : "REMOVED",
+      "Syllabus" : "GL, PL, AL",
+      "Batch " : "Batch 2",
+      "Attribution" : "(N2000);",
+      "Skill" : "Writing|Reading|Singing|Spoken Interaction",
+      "GSE Value" : "70",
+      "CEFR Level" : "B2+ (67-75)",
+      "Source" : "North",
+      "Descriptor" : "n2Can dsa adopt a level of formality appropriate to the circumstances.",
+      "Function/Notion" : "",
+      "Example" : "",
+      "Anchor" : "Y",
+      "Estimated Level" : "",
+      "Source Descriptor" : "Can adopt a level of formality appropriate to the circumstances. (North)",
+      "CEFR Communicative activity" : "",
+      "N2000 Logit" : "2"
+    },
+    "displayName" : "descriptor_ok (1).csv",
+    "uploader" : {
+      "provider" : "external",
+      "displayName" : "John Doe",
+      "userStatus" : "ACTIVE",
+      "emailAddress" : [
+        "example@gmail.com"
+      ],
+      "language" : null,
+      "timeZone" : null,
+      "roles" : [
+        "owner"
+      ],
+      "accessToken" : "bla_bla_bla",
+      "refreshToken" : "bla_bla_bla",
+      "userId" : "547711636cea7ebb1c18f152",
+      "logged_in" : true
+    }
+  },
+  "priority" : 0,
+  "queue" : "descriptors",
+  "status" : "dequeued",
+  "timeout" : null
+}
